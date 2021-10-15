@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 36rem;
+  font-family: $customFont;
+  font-size: 1.6rem;
+  color: #000;
+  line-height: 1.1;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+label {
+  cursor: pointer;
+  user-select: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border-radius: 0;
+  &[type="search"] {
+    -webkit-appearance: none;
+  }
+}
+
+:focus {
+  @include placeholder {
+    color: transparent;
+  }
+}
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+  max-width: 170rem;
+  width: 100%;
+  @include breakpoint($tablet-width) {
+    padding: 0 2.4rem;
+  }
+  @include breakpoint($desktop-width) {
+    padding: 0 8rem;
+  }
+  @include breakpoint($desktop-lg-width) {
+    padding: 0 12rem;
+  }
+}
+
+.site-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+
+.site-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
