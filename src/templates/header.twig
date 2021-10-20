@@ -9,18 +9,7 @@
 
         {% include 'user-actions.twig' %}
 
-        <ul class="header__social-list social-list">
-          <li class="social-list__item">
-            <a href="https://t.me/username" class="social-list__link">
-              <svg class="social-list__icon"><use xlink:href="assets/sprite.svg#telegram"></use></svg>
-            </a>
-          </li>
-          <li class="social-list__item">
-            <a href="https://wa.me/89169598565" class="social-list__link">
-              <svg class="social-list__icon"><use xlink:href="assets/sprite.svg#whatsapp"></use></svg>
-            </a>
-          </li>
-        </ul>
+        {% include 'social-list.twig' with {extraClass: 'header__social-list'} %}
       </div>
     </div>
   </div>
