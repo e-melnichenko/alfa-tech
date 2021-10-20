@@ -1,1 +1,103 @@
+<header class="header js-header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <div class="header__phone">
+          <a href="tel:+78004443435" class="header__phone-link link" target="_blank">8 800 444 34 35</a>
+          <span class="header__phone-text">бесплатный звонок по&nbsp;России</span>
+        </div>
 
+        {% include 'user-actions.twig' %}
+
+        <ul class="header__social-list social-list">
+          <li class="social-list__item">
+            <a href="https://t.me/username" class="social-list__link">
+              <svg class="social-list__icon"><use xlink:href="assets/sprite.svg#telegram"></use></svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="https://wa.me/89169598565" class="social-list__link">
+              <svg class="social-list__icon"><use xlink:href="assets/sprite.svg#whatsapp"></use></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__nav">
+    <div class="container">
+      <div class="header__nav-inner">
+      {% if (pageName != 'main') %}
+        <div class="header__logo-wrap">
+          <a href="/" class="header__logo-link">
+            <img src="assets/img/logo@1x.png" srcset="assets/img/logo@2x.png 2x" class="header__logo-img" alt="alfa-tech лого">
+          </a>
+        </div>
+      {% else %}
+        <div class="header__logo-wrap">
+          <span class="header__logo-link">
+            <img src="assets/img/logo@1x.png" srcset="assets/img/logo@2x.png 2x" class="header__logo-img" alt="alfa-tech лого">
+          </span>
+        </div>
+      {% endif %}
+        <a href="#" class="header__catalog-link">
+          <svg><use xlink:href="assets/sprite.svg#catalog"></use></svg>
+          <span>Каталог</span>
+        </a>
+        <nav class="header__mobile-menu">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Комплексные решения</a>
+            </li>
+            <li class="header__nav-item _nested">
+              <a href="#" class="header__nav-link">
+                <span>Услуги</span>
+                <svg><use xlink:href="assets/sprite.svg#chevron-down"></use></svg>
+              </a>
+              <ul class="header__nested-list">
+                <li class="header__nested-item">
+                  <a href="#" class="header__nested-link">Проектирование</a>
+                </li>
+                <li class="header__nested-item">
+                  <a href="#" class="header__nested-link">Монтаж и&nbsp;установка</a>
+                </li>
+                <li class="header__nested-item">
+                  <a href="#" class="header__nested-link">Поставка оборудования</a>
+                </li>
+                <li class="header__nested-item">
+                  <a href="#" class="header__nested-link">Гарантийное и&nbsp;постгарантийное обслуживание</a>
+                </li>
+                <li class="header__nested-item">
+                  <a href="#" class="header__nested-link">Техническая поддержка</a>
+                </li>
+                <li class="header__nested-item">
+                  <a href="#" class="header__nested-link">Подбор музыкального контента</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">О компании</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Портфолио</a>
+            </li>
+            <li class="header__nav-item _bordered">
+              <a href="#" class="header__nav-link">Публикации</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Контакты</a>
+            </li>
+            <li class="header__nav-item _user-actions">
+              {% include 'user-actions.twig' %}
+            </li>
+          </ul>
+        </nav>
+        <button class="header__menu-toggle js-menu-toggle" type="button">
+          <svg class="header__menu-icon _open"><use xlink:href="assets/sprite.svg#menu"></use></svg>
+          <svg class="header__menu-icon _close"><use xlink:href="assets/sprite.svg#close"></use></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>

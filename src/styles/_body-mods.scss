@@ -4,18 +4,18 @@
 
   .header {
     &__mobile-menu {
-      top: var(--header-height, 6rem);
+      // top: var(--header-height, 6rem);
       transform: none;
     }
 
-    // &__toggle-inner {
-    //   &._menu-opened {
-    //     display: flex;
-    //   }
-    //   &._menu-closed {
-    //     display: none;
-    //   }
-    // }
+    &__menu-icon {
+      &._close {
+        display: block;
+      }
+      &._open {
+        display: none;
+      }
+    }
   }
 }
 

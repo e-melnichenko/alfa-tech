@@ -1,0 +1,22 @@
+.social-list {
+  display: flex;
+  margin-right: -1.8rem;
+
+  &__item {
+    margin-right: 1.8rem;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 3.4rem;
+    height: 3.4rem;
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

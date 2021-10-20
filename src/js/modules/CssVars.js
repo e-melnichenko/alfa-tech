@@ -3,7 +3,7 @@ import debounce from "../utils/debounce";
 class CssVars {
   constructor() {
     this.elems = {};
-    // this.elems.header = document.querySelector('.js-header');
+    this.elems.header = document.querySelector('.js-header');
 
     this._addListeners();
     setTimeout(() => this.update(), 0);
@@ -12,7 +12,7 @@ class CssVars {
   update() {
     const { header } = this.elems;
 
-    // this.set({ name: '--header-height', value: `${header.offsetHeight}px` });
+    this.set({ name: '--header-height', value: `${header.offsetHeight}px` });
     this.set({ name: '--vh', value: `${window.innerHeight * 0.01}px` });
   }
 

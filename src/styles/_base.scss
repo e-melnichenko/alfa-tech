@@ -15,7 +15,7 @@ html {
 
 body {
   min-width: 36rem;
-  font-family: $customFont;
+  font-family: $gotham;
   font-size: 1.6rem;
   color: #000;
   line-height: 1.1;
@@ -71,9 +71,12 @@ input {
   @include breakpoint($desktop-width) {
     padding: 0 8rem;
   }
-  @include breakpoint($desktop-lg-width) {
-    padding: 0 12rem;
+  @include breakpoint($note-width) {
+    padding: 0 13rem;
   }
+  // @include breakpoint($desktop-lg-width) {
+  //   padding: 0 12rem;
+  // }
 }
 
 .site-wrap {

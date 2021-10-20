@@ -1,0 +1,40 @@
+.user-actions {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid #E1E1E1;
+  width: 100%;
+  padding-top: 2rem;
+
+  @include breakpoint($tablet-width) {
+    flex-direction: row;
+    width: auto;
+    margin: 0 -1.5rem;
+    margin-left: 3rem;
+    padding: 0;
+    border: none;
+  }
+
+  &__item {
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include breakpoint($tablet-width) {
+      padding: 0;
+      margin: 0 1.5rem;
+    }
+
+    &._search {
+      display: flex;
+      align-items: center;
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 1.4rem;
+      }
+    }
+  }
+}
