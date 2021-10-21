@@ -1,3 +1,201 @@
 .footer {
+  color: #fff;
 
+  &__main {
+    background-color: #333333;
+  }
+
+  &__main-inner {
+    @include breakpoint($desktop-width) {
+      display: flex;
+      padding-top: 8rem;
+      padding-bottom: 6rem;
+    }
+  }
+
+  &__section {
+    padding: 3rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.23);
+    &:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .social-list {
+        display: flex;
+      }
+    }
+    &:last-child {
+      border: none;
+    }
+
+    @include breakpoint($desktop-width) {
+      margin-right: 2.5rem;
+      padding-right: 2.5rem;
+      border-bottom: none;
+      border-right: 1px solid rgba(255, 255, 255, 0.23);
+      &:first-child {
+        display: block;
+        width: 33.4rem;
+        flex-shrink: 0;
+        .social-list {
+          display: none;
+        }
+      }
+
+      &:last-child {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none;
+      }
+    }
+  }
+
+  &__logo-link {
+    width: 13rem;
+    margin-bottom: 2rem;
+    @include breakpoint($desktop-width) {
+      display: block;
+    }
+  }
+
+  &__logo-img {
+    display: block;
+  }
+
+  &__logo-text {
+    margin: 0;
+    margin-bottom: 1.8rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    @include breakpoint($tablet-width) {
+      font-size: 1.4rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.4rem;
+    @include breakpoint($tablet-width) {
+      flex-direction: row-reverse;
+    }
+    @include breakpoint($desktop-width) {
+      flex-direction: flex-start;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__email {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-right: 2.4rem;
+    text-decoration: none;
+    @include breakpoint($tablet-width) {
+      margin-right: 0;
+    }
+  }
+
+  &__phone {
+    text-align: center;
+    @include breakpoint($tablet-width) {
+      margin-right: 2.4rem;
+    }
+    @include breakpoint($desktop-width) {
+      text-align: left;
+    }
+  }
+
+  &__phone-link {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  &__phone-text {
+    margin: 0;
+    margin-top: .4rem;
+    font-size: .8rem;
+    color: #949494;
+    @include breakpoint($tablet-width) {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__showroom-link {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+
+  &__info-text {
+    font-size: 1.4rem;
+    margin: 0;
+    margin-bottom: 2.4rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 2.4rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  &__item {
+    margin-bottom: 2.4rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    font-size: 1.4rem;
+    color: #B2B2B2;
+    text-decoration: none;
+  }
+
+  &__bottom {
+    padding: .7rem 0;
+    background-color:#252525;
+    font-family: $roboto;
+    @include breakpoint($desktop-width) {
+      padding: 2.6rem 0;
+    }
+  }
+
+  &__bottom-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    color: #A1A1A1;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin: 0;
+    @include breakpoint($tablet-width) {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__privacy-policy {
+    text-decoration: none;
+    color: #E9E9E9;
+    font-size: 1rem;
+    @include breakpoint($tablet-width) {
+      font-size: 1.4rem;
+    }
+  }
+
+  .social-list {
+    display: none;
+    margin-bottom: 2.4rem;
+    @include breakpoint($desktop-width) {
+      display: flex;
+      margin-bottom: 0;
+      margin-top: 5rem;
+    }
+  }
 }

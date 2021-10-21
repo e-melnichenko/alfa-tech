@@ -5,19 +5,23 @@
         <div class="footer__section">
         {% if (pageName != 'main') %}
           <a href="/" class="footer__logo-link">
-            <img src="assets/img/logo@1x.png" srcset="assets/img/logo@2x.png 2x" class="footer__logo-img" alt="alfa-tech лого">
+            <img src="assets/img/logo-white@1x.png" srcset="assets/img/logo-white@2x.png 2x" class="footer__logo-img" alt="alfa-tech лого">
           </a>
         {% else %}
           <span class="footer__logo-link">
             <img src="assets/img/logo-white@1x.png" srcset="assets/img/logo-white@2x.png 2x" class="footer__logo-img" alt="alfa-tech лого">
           </span>
         {% endif %}
+          <p class="footer__logo-text">Комплексные решения для бизнеса</p>
+
+          {% include 'social-list.twig' %}
+
           <div class="footer__contacts">
+            <a href="mailto:info@alfazvuk.ru" target="_blank" class="footer__email">info@alfazvuk.ru</a>
             <div class="footer__phone">
               <a href="tel:88004443435" class="footer__phone-link">8 800 444 34 35</a>
-              <p class="footer__phone-text"></p>
+              <p class="footer__phone-text">бесплатный звонок по России</p>
             </div>
-            <a href="mailto:info@alfazvuk.ru" class="footer__email">info@alfazvuk.ru</a>
           </div>
           <a href="#" class="footer__showroom-link">Записаться в шоурум</a>
         </div>
