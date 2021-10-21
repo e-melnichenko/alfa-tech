@@ -1,0 +1,105 @@
+.complex {
+  margin-bottom: 8rem;
+
+  &__inner {
+    @include breakpoint($desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2rem;
+    }
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    @include breakpoint($desktop-width) {
+      align-self: center;
+      margin: 0;
+    }
+  }
+
+  &__link {
+    margin-bottom: 4rem;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include breakpoint($desktop-width) {
+      position: relative;
+      height: 25rem;
+      margin: 0;
+      color: #fff;
+      @include hover() {
+        .complex {
+          &__desc-wrap {
+            max-height: 100%;
+          }
+          &__subtitle {
+            background-color: #930505;
+          }
+          &__desc-wrap {
+            background-color: #930505;
+          }
+        }
+      }
+    }
+  }
+
+  &__link-content {
+    @include breakpoint($desktop-width) {
+      margin-left: 2.8rem;
+      width: 28rem;
+      height: 25rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 2.4rem;
+    font-weight: 500;
+    @include breakpoint($desktop-width) {
+      margin: 0;
+      font-size: 2.2rem;
+      line-height: 1.2;
+      background-color: #630707;
+      padding: 3rem 2rem;
+      transition: background-color 1s;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+    margin-bottom: 2.4rem;
+    @include breakpoint($desktop-width) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+  }
+
+  &__desc-wrap {
+    @include breakpoint($desktop-width) {
+      @include hideScrollbar();
+      overflow: auto;
+      max-height: 0;
+      background-color: #630707;
+      transition: max-height 1s, background-color 1s;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    @include breakpoint($desktop-width) {
+      padding: 3rem 2rem;
+      padding-top: 0;
+    }
+  }
+}

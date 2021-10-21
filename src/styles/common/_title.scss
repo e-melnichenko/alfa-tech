@@ -1,0 +1,12 @@
+.title {
+  margin: 0;
+  font-size: 3.2rem;
+  line-height: 3.8rem;
+  font-weight: 400;
+  font-family: $roboto;
+  @include breakpoint($tablet-width) {
+    font-family: $gotham;
+    font-weight: 500;
+    line-height: 1.1;
+  }
+}

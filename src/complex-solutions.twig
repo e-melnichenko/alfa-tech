@@ -1,0 +1,92 @@
+{% extends 'templates/base.twig' %}
+
+{% block page %}
+
+{% set list = [
+  {
+    title: 'Торговые центры и&nbsp;магазины',
+    img: 'mall.jpg',
+    desc: 'asdf.'
+  },
+  {
+    title: 'Складские комплексы и&nbsp;производства',
+    img: 'warehouse.jpg',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus enim esse quia perspiciatis voluptate ullam quos corporis? In vero, iusto eveniet dolorum modi cupiditate reiciendis explicabo tempora nam dolorem.'
+  },
+  {
+    title: 'Гостиницы и&nbsp;отели',
+    img: 'hotel.jpg',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus enim esse quia perspiciatis voluptate ullam quos corporis? In vero, iusto eveniet dolorum modi cupiditate reiciendis explicabo tempora nam dolorem.'
+  },
+  {
+    title: 'Офисные и&nbsp;деловые центры',
+    img: 'office.jpg',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus enim esse quia perspiciatis voluptate ullam quos corporis? In vero, iusto eveniet dolorum modi cupiditate reiciendis explicabo tempora nam dolorem.'
+  },
+  {
+    title: 'Автосалоны',
+    img: 'car-dealership.jpg',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus enim esse quia perspiciatis voluptate ullam quos corporis? In vero, iusto eveniet dolorum modi cupiditate reiciendis explicabo tempora nam dolorem.'
+  },
+  {
+    title: 'Салоны красоты и&nbsp;СПА',
+    img: 'spa.jpg',
+    desc: 'Комплекты оборудования для трансляции музыкального контента, управления звуковой системой, видеонаблюдение с различным функционалом'
+  },
+  {
+    title: 'Спортивные объекты',
+    img: 'sport.jpg',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus enim esse quia perspiciatis voluptate ullam quos corporis? In vero, iusto eveniet dolorum modi cupiditate reiciendis explicabo tempora nam dolorem.'
+  },
+  {
+    title: 'Конференц залы',
+    img: 'conference-room.jpg',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus enim esse quia perspiciatis voluptate ullam quos corporis? In vero, iusto eveniet dolorum modi cupiditate reiciendis explicabo tempora nam dolorem.'
+  },
+  {
+    title: 'Рестораны Кафе Бары',
+    img: 'bar.jpg',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus enim esse quia perspiciatis voluptate ullam quos corporis? In vero, iusto eveniet dolorum modi cupiditate reiciendis explicabo tempora nam dolorem.'
+  },
+  {
+    title: 'Оборудование для ночных клубов &laquo;под ключ&raquo;',
+    img: 'night-club.jpg',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus enim esse quia perspiciatis voluptate ullam quos corporis? In vero, iusto eveniet dolorum modi cupiditate reiciendis explicabo tempora nam dolorem.'
+  },
+  {
+    title: 'Автозаправочные станции (АЗС)',
+    img: 'gas-station.jpg',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus enim esse quia perspiciatis voluptate ullam quos corporis? In vero, iusto eveniet dolorum modi cupiditate reiciendis explicabo tempora nam dolorem.'
+  },
+  {
+    title: 'Открытые площадки',
+    img: 'open-areas.jpg',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus enim esse quia perspiciatis voluptate ullam quos corporis? In vero, iusto eveniet dolorum modi cupiditate reiciendis explicabo tempora nam dolorem.'
+  },
+  {
+    title: 'Учебные учреждения',
+    img: 'education.jpg',
+    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis ducimus enim esse quia perspiciatis voluptate ullam quos corporis? In vero, iusto eveniet dolorum modi cupiditate reiciendis explicabo tempora nam dolorem.'
+  },
+]%}
+
+{% include 'templates/breadcrumbs.twig' %}
+  <section class="complex">
+    <div class="container">
+      <div class="complex__inner">
+        <h1 class="complex__title title">Комплексные решения по звуку, свету и видеонаблюдению</h1>
+      {% for item in list %}
+        <a href="#" class="complex__link">
+          <div class="complex__link-content">
+            <h2 class="complex__subtitle">{{ item.title }}</h2>
+            <img src="assets/img/complex/{{ item.img }}" alt="" class="complex__img">
+            <div class="complex__desc-wrap">
+              <p class="complex__desc">{{ item.desc }}</p>
+            </div>
+          </div>
+        </a>
+      {% endfor %}
+      </div>
+    </div>
+  </section>
+{% endblock %}
