@@ -1,0 +1,30 @@
+{% set complexList = [
+  {
+    title: 'Фоновый звук',
+    img: 'bg-sound.jpg',
+  },
+  {
+    title: 'Видеонаблюдение',
+    img: 'video-surveliance.jpg',
+  },
+  {
+    title: 'Речевое оповещение складских комплексов',
+    img: 'warehouse.jpg',
+  },
+  {
+    title: 'Промо-мероприятия',
+    img: 'promo-events.jpg',
+  },
+] %}
+
+<ul class="complex-list">
+{% for item in complexList %}
+  <li class="complex-list__item">
+    <a href="#" class="complex-list__link">
+      <img src="assets/img/complex-list/{{ item.img }}" class="complex-list__img"></img>
+      <h3 class="complex-list__title">{{ item.title }}</h3>
+      <svg class="complex-list__arrow"><use xlink:href="assets/sprite.svg#arrow-right"></use></svg>
+    </a>
+  </li>
+  {% endfor %}
+</ul>

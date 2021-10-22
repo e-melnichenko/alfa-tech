@@ -1,0 +1,10 @@
+.complex-category {
+  margin-bottom: 8rem;
+  @include breakpoint($desktop-width) {
+    margin-bottom: 10rem;
+  }
+
+  &__title {
+    margin-bottom: 2.6rem;
+  }
+}

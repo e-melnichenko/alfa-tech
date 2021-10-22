@@ -1,0 +1,62 @@
+{% extends 'templates/base.twig' %}
+
+{% block page %}
+
+{% include 'templates/breadcrumbs.twig' %}
+
+
+
+<section class="complex-category">
+  <div class="container">
+    <h1 class="complex-category__title title">Торговые центры и&nbsp;магазины</h1>
+
+    {% include 'templates/complex-list.twig' %}
+  </div>
+</section>
+
+<section class="projects-list">
+  <div class="container">
+    <h2 class="projects-list__title title">Реализованные проекты в этой отрасли</h2>
+    {% set list = [
+      {
+        title: 'Звуковая матрица в торговом доме «Артисан»',
+        img: '1.jpg',
+      },
+      {
+        title: 'Воплощение звука в ТВК «Тишинка»',
+        img: '2.jpg',
+      },
+      {
+        title: 'Магазин "Бегемотик"',
+        img: '3.jpg',
+      },
+      {
+        title: 'Camelot',
+        img: '4.jpg',
+      },
+      {
+        title: 'Проект озвучивания ТЦ Адреналин',
+        img: '5.jpg',
+      },
+      {
+        title: 'Все проекты',
+        img: 'all.jpg',
+        all: true,
+      },
+    ] %}
+    <ul class="projects-list__list">
+
+    {% for item in list %}
+      <li class="projects-list__item {{ item.all ? '_all' : '' }}">
+        <a href="#" class="projects-list__link">
+          <h3 class="projects-list__subtitle">{{ item.title }}</h3>
+          <img src="assets/img/projects-list/{{ item.img }}" alt="" class="projects-list__img">
+          <svg class="projects-list__arrow"><use xlink:href="assets/sprite.svg#arrow-right"></use></svg>
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% endblock %}
