@@ -1,5 +1,8 @@
 .complex {
   margin-bottom: 8rem;
+  @include breakpoint($desktop-width) {
+    margin-bottom: 12rem;
+  }
 
   &__inner {
     @include breakpoint($desktop-width) {
