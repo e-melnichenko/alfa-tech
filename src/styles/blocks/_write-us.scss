@@ -1,0 +1,52 @@
+.write-us {
+  margin-bottom: 8rem;
+  color: #fff;
+  @include breakpoint($desktop-width) {
+    margin-bottom: 10rem;
+  }
+
+  &__inner {
+    padding: 2rem;
+    background-image: url("../assets/img/write-us_mobile.jpg");
+    background-size: cover;
+    background-position: center center;
+    @include breakpoint($tablet-width) {
+      padding: 4rem;
+    }
+    @include breakpoint($desktop-width) {
+      background-image: url("../assets/img/write-us_desktop.jpg");
+      padding: 8rem;
+    }
+    @include breakpoint($desktop-lg-width) {
+      padding: 10rem;
+    }
+  }
+
+  &__content {
+    @include breakpoint($desktop-width) {
+      width: 50%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    font-weight: 400;
+    @include breakpoint($tablet-width) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 2rem;
+    color: #CDCDCD;
+    line-height: 2.4rem;
+    @include breakpoint($tablet-width) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__btn {
+    width: 23rem;
+  }
+}

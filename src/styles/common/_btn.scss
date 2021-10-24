@@ -1,18 +1,35 @@
 .btn {
   display: inline-block;
-  padding: 1.1rem 1.1rem;
-  color: #fff;
+  padding: 2rem;
+  color: $color-main;
   font-size: 1.6rem;
   line-height: 1;
   font-weight: 500;
   text-decoration: none;
-  background-color: $color-main;
+  background-color: #fff;
   border-radius: .4rem;
   text-align: center;
-  border: 1px solid $color-main;
+  border: 2px solid $color-main;
+  cursor: pointer;
 
-  &._full {
-    width: 100%;
+  &._red {
+    position: relative;
+    padding: 2.2rem 2rem;
+    padding-right: 6rem;
+    border: none;
+    background-color: $color-main;
+    color: #fff;
+    &::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 6rem;
+      background-image: url("../assets/img/btn-right-part.svg");
+      background-repeat: no-repeat;
+      background-position: cover;
+    }
   }
 
   &._white {

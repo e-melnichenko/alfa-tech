@@ -1,0 +1,154 @@
+.questions {
+  margin-bottom: 7rem;
+
+  &__list {
+    margin-bottom: 3.5rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include breakpoint($tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -2rem;
+      margin-top: -2rem;
+    }
+  }
+
+  &__item {
+    margin-bottom: 2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include breakpoint($tablet-width) {
+      width: calc(50% - 2rem);
+      margin: 0;
+      margin-right: 2rem;
+      margin-top: 2rem;
+    }
+    @include breakpoint($desktop-width) {
+      width: calc(100% / 3 - 2rem);
+    }
+    @include breakpoint($desktop-lg-width) {
+      width: calc(100% / 4 - 2rem);
+    }
+  }
+
+  &__item-link {
+    position: relative;
+    display: block;
+    min-height: 19rem;
+    padding: 2.5rem 2rem;
+    padding-right: 14rem;
+    overflow: hidden;
+    text-decoration: none;
+    color: #0F1011;
+    background-color: #F1F1F1;
+
+    @include breakpoint($tablet-width) {
+      padding: 3.5rem 3rem;
+      padding-right: 14rem;
+    }
+  }
+
+  &__item-title {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.25;
+    font-weight: 500;
+
+  }
+
+  &__item-arrow {
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    width: 3rem;
+    height: 2rem;
+  }
+
+  &__item-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28rem;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(50%);
+  }
+
+
+  .container > {
+    h2 {
+      @extend .title;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 3.5rem;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      color: #343A3F;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    ul:not(.questions__list) {
+      margin-bottom: 3.5rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      @include breakpoint($tablet-width) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -2.4rem;
+        margin-top: -2.4rem;
+      }
+      @include breakpoint($desktop-width) {
+        margin-right: -5rem;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        line-height: 2.2rem;
+        margin-bottom: 1.6rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        @include breakpoint($tablet-width) {
+          width: calc(50% - 2.4rem);
+          margin: 0;
+          margin-right: 2.4rem;
+          margin-top: 2.4rem;
+        }
+        @include breakpoint($desktop-width) {
+          width: calc(50% - 5rem);
+          margin-right: 5rem;
+        }
+        @include breakpoint($note-width) {
+          width: 30rem;
+          margin-right: 10rem;
+        }
+
+        span {
+          flex-shrink: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 4.7rem;
+          height: 4.7rem;
+          margin-right: 1.8rem;
+          font-weight: 700;
+          border-radius: 50%;
+          background-color: #630707;
+          font-size: 3.2rem;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

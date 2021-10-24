@@ -1,0 +1,130 @@
+{% extends 'templates/base.twig' %}
+
+{% block page %}
+
+<section class="complex-card">
+  <div class="container">
+
+    <div class="complex-card__content-wrap">
+      {% include 'templates/breadcrumbs.twig' %}
+      <div class="complex-card__content">
+        <h1 class="complex-card__title title">Фоновый звук для магазинов и торговых центров</h1>
+        <p class="complex-card__desc">Музыкальное оформление магазина, минимаркета, супермаркета подчеркивает его стиль, создает настроение и комфортную атмосферу для покупателей. Именно поэтому озвучиванию данных помещений уделяется столько внимания.</p>
+        <div class="complex-card__btn-wrap">
+          <button class="complex-card__order-btn btn _red" type="button">Заказать</button>
+          <button class="complex-card__order-expert btn" type="button">Заказать выезд специалиста</button>
+        </div>
+        <div class="complex-card__contacts">
+          <div class="complex-card__contacts-item">
+            <p class="complex-card__contacts-text">Задать вопрос по телефону:</p>
+            <a href="tel:88043337576" class="complex-card__contacts-link">8 (804) 333 75 76</a>
+          </div>
+          <div class="complex-card__contacts-item">
+            <p class="complex-card__contacts-text">Задать вопрос по email:</p>
+            <a href="mailto:info@alfazvuk.ru" target="_blank" class="complex-card__contacts-link">info@alfazvuk.ru</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="complex-card__img-wrap">
+      <img src="assets/img/complex-card.jpg" alt="" class="complex-card__img">
+    </div>
+
+  </div>
+</section>
+
+<section class="other-systems">
+  <div class="container">
+    <h2 class="other-systems__title title">Другие системы</h2>
+
+    {% include 'templates/complex-list.twig' %}
+
+    <div class="other-systems__desc-section">
+      <div class="other-systems__desc">
+        <p>Музыкальное оборудование для супермаркетов и&nbsp;магазинов транслирует фоновую музыку, рекламные сообщения, а&nbsp;в&nbsp;случае форс-мажора выполняет функцию экстренного оповещения. Поскольку никому еще не&nbsp;приходило в&nbsp;голову пригласить на&nbsp;постоянную работу диджея, один из&nbsp;важных параметров выбора аудиоаппаратуры&nbsp;&mdash; простота управления. Владельцы торговых залов устанавливают динамики и&nbsp;громкоговорители, подключенные к&nbsp;компьютерной системе или автономному блоку. Какой вариант выгоднее?</p>
+        <p>Все зависит от&nbsp;цены вопроса: сколько средств вы&nbsp;согласны вложить в&nbsp;музыкальное оформление? Центральный блок удобнее, он&nbsp;дает больше возможностей и&nbsp;продолжает работать даже после выключения компьютера, но&nbsp;простая компьютерная система обходится дешевле. Для больших торговых площадей монтируют многоканальный комплект акустики, для магазинов среднего масштаба и&nbsp;уютных маленьких заведений подойдет управление через компьютер.</p>
+      </div>
+      <img class="other-systems__img" src="assets/img/other-systems.jpg" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="questions">
+  <div class="container">
+    <h2>Из чего состоят акустические системы для торговых помещений?</h2>
+    <ul class="questions__list">
+    {% set list = [
+      {
+        title: 'Громкоговорители',
+        img: 'loudspeaker.png',
+      },
+      {
+        title: 'Усилители',
+        img: 'amplifier.png',
+      },
+      {
+        title: 'Динамики',
+        img: 'speakers.png',
+      },
+      {
+        title: 'Микрофоны',
+        img: 'microphone.png',
+      },
+      {
+        title: 'Пульт дистанционного управления',
+        img: 'remote.png',
+      },
+    ] %}
+
+    {% for item in list %}
+      <li class="questions__item">
+        <a href="#" class="questions__item-link">
+          <h3 class="questions__item-title">{{ item.title }}</h3>
+          <img src="assets/img/questions/{{ item.img }}" alt="" class="questions__item-img">
+          <svg class="questions__item-arrow"><use xlink:href="assets/sprite.svg#arrow-right"></use></svg>
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+    <p>Количество динамиков и&nbsp;громкоговорителей определяется площадью помещения. Эти устройства могут быть настенными, потолочными или встраиваемыми. Чтобы посоветовать вам подходящий состав аудиосистемы для магазина, нашим консультантам нужно знать не&nbsp;только линейные объемы помещения, но&nbsp;также высоту потолков, число залов и&nbsp;особенности дизайна. На&nbsp;сайте &laquo;Альфа Звук&raquo; вы&nbsp;можете купить высококлассную аппаратуру для озвучивания магазина и&nbsp;сразу заказать ее&nbsp;монтаж и&nbsp;настройку.</p>
+  </div>
+</section>
+
+<section class="questions">
+  <div class="container">
+    <h2>Как монтируется аппаратура?</h2>
+    <p>Аудиотехника в&nbsp;торговых залах скрывается от&nbsp;глаз посетителей&nbsp;&mdash; ничто не&nbsp;должно отвлекать внимания от&nbsp;товаров. Поэтому мы&nbsp;предлагаем монтаж в&nbsp;потолок или стены, при котором устройства закрываются специальными панелями. Звук для магазина должен быть ровным и&nbsp;доноситься до&nbsp;всех уголков зала с&nbsp;одинаковой громкостью, поэтому важно поместить технику так, чтобы звуковые волны покрывали всю площадь целиком. Перед монтажом обязательно составляется проект размещения, учитывающий:</p>
+    <ul>
+      <li>
+        <span>1</span>
+        звуковые особенности помещения
+      </li>
+      <li>
+        <span>2</span>
+        наличие препятствий (декора, стеллажей)
+      </li>
+      <li>
+        <span>3</span>
+        длительность использования аппаратуры в сутки
+      </li>
+    </ul>
+    <p>Для торговых залов подходит техника, которая рассчитана на&nbsp;непрерывную работу в&nbsp;течение 10&nbsp;часов ежедневно. Это класс устройств, предназначенных для крупных торговых предприятий и&nbsp;общественных мест. Заоблачных требований к&nbsp;диапазону и&nbsp;глубине звучания при этом не&nbsp;предъявляется, так что покупка и&nbsp;монтаж техники обходятся недорого. Единственный фактор, который может отразиться на&nbsp;цене установки аудиосистемы в&nbsp;помещении,&nbsp;&mdash; большая площадь помещения.</p>
+  </div>
+</section>
+
+{% include 'templates/info.twig' %}
+
+<section class="write-us">
+  <div class="container">
+    <div class="write-us__inner">
+      <div class="write-us__content">
+        <h2 class="write-us__title title">Остались вопросы?</h2>
+        <p class="write-us__text">Чтобы получить консультации по&nbsp;подбору оборудования для организации профессионального звука и/или оформить заявку, нужно сделать запрос на&nbsp;нашем сайте.</p>
+        <p class="write-us__text">Вы&nbsp;можете воспользоваться формой обратной связи или позвонить менеджерам по&nbsp;контактным телефонам.</p>
+        <button class="write-us__btn btn _red">Написать нам</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,50 @@
+.other-systems {
+  margin-bottom: 8rem;
+  @include breakpoint($desktop-width) {
+    margin-bottom: 10rem;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  .complex-list {
+    margin-bottom: 4rem;
+  }
+
+  &__desc-section {
+    @include breakpoint($desktop-width) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 2.5rem;
+    @include breakpoint($desktop-width) {
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin: 0;
+      margin-bottom: 2.5rem;
+      color: #343A3F;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    @include breakpoint($desktop-width) {
+      width: calc(50% - 4.6rem);
+      margin: 0;
+    }
+  }
+}
