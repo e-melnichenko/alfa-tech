@@ -1,0 +1,54 @@
+.portfolio-detail {
+  margin-bottom: 8rem;
+  @include breakpoint($desktop-width) {
+    margin-bottom: 10rem;
+  }
+
+  &__banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 32rem;
+    margin-bottom: 6rem;
+    &::after {
+      content: '';
+      @include stretchAbsolute();
+      background-color: #060F17;
+      opacity: 0.8;
+    }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    color: #ECECEC;
+    text-align: center;
+  }
+
+  .breadcrumbs {
+    position: relative;
+    z-index: 1;
+    padding: 2rem 0;
+
+    &__item {
+      &:last-child {
+        display: none;
+      }
+      &:nth-last-child(2) {
+        margin-right: 0;
+        .breadcrumbs__arrow {
+          display: none;
+        }
+      }
+    }
+
+    &__link {
+      color: #C6C6C6;
+      @include hover() {
+        color: #fff;
+      }
+    }
+  }
+}
