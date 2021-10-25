@@ -5,7 +5,7 @@
   .header {
     &__mobile-menu {
       // top: var(--header-height, 6rem);
-      transform: none;
+      transform: translateY(100%);
     }
 
     &__menu-icon {

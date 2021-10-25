@@ -1,0 +1,40 @@
+{% extends 'templates/base.twig' %}
+
+{% block page %}
+
+{% include 'templates/breadcrumbs.twig' %}
+
+<section class="portfolio">
+  <div class="container">
+    <h1 class="portfolio__title title">Портфолио</h1>
+    <form class="portfolio__filter" action="action">
+    {% set list = ['Все', 'Гостиничные комплексы, базы отдыха', 'Салоны красоты и СПА', 'Автомобильные салоны и АЗС', 'Фитнес клубы и атлетические залы', 'Кафе, бары и рестораны', 'Магазины и бутики', 'Салоны связи', 'Киноцентры', 'Офисы и деловые центры', 'Образовательные учреждения', 'Дома культуры', 'Торговые центры', 'Банки'] %}
+
+    {% for item in list %}
+      <label class="portfolio__filter-item">
+        <input type="radio" name="filter" value="{{ loop.index }}">
+        <span class="portfolio__filter-text">{{ item }}</span>
+      </label>
+    {% endfor %}
+
+    </form>
+    <div class="portfolio__list-wrap">
+      <ul class="portfolio__list">
+      {% set list = ['Ресторан студии Артемия Лебедева', 'Такси - магазин одежды', 'ЖК "Голландия"', 'Альфа Банк', 'Автозаправочные станции ТатНефть', 'Ресторан Темпл Бар Стейк&Паб', 'Ресторан "Остожье" и кафе "Пшеница"', 'Зона особого внимания - парк-отель «Озеро Круглое»'] %}
+      {% for item in list %}
+        <li class="portfolio__item">
+          <a href="#" class="portfolio__link">
+            <h3 class="portfolio__item-title">{{ item }}</h3>
+            <p class="portfolio__item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime corporis dolor reiciendis. Nobis assumenda, omnis corporis perspiciatis laboriosam laudantium eum nemo unde nisi possimus dignissimos voluptas doloremque quam amet blanditiis!</p>
+            <img class="portfolio__item-img" src="assets/img/portfolio/{{ loop.index }}.jpg" alt="">
+            <svg class="portfolio__item-arrow"><use xlink:href="assets/sprite.svg#arrow-right"></use></svg>
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+
+      {% include 'templates/pagination.twig' %}
+    </div>
+  </div>
+</section>
+{% endblock %}

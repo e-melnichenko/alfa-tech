@@ -1,0 +1,50 @@
+.pagination {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  &__link {
+    position: relative;
+    width: calc(100% / 9);
+    border: 1px solid #F3F3F3;
+    background-color: #FCFCFC;
+    padding-top: calc(100% / 9);
+    color: $color-main;
+    text-decoration: none;
+    &._current {
+      background-color: $color-main;
+      border-color: $color-main;
+      color: #fff;
+    }
+    &._disabled {
+      pointer-events: none;
+      filter: grayscale(100%);
+    }
+
+    @include breakpoint($tablet-width) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 5rem;
+      height: 5rem;
+      padding: 1rem;
+    }
+  }
+
+  &__content {
+    @include breakpoint-only(0, $tablet-width) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 1rem;
+    fill: currentColor;
+  }
+}

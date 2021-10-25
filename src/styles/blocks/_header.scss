@@ -123,11 +123,10 @@
   &__mobile-menu {
     @include breakpoint-only(0, $desktop-width) {
       position: fixed;
-      top: var(--header-height);
+      bottom: calc(100 * var(--vh) - var(--header-height));
       left: 0;
       height: calc(100 * var(--vh) - var(--header-height));
       overflow: auto;
-      transform: translateY(-100%);
       width: 100%;
       padding: 3rem 2rem;
       padding-top: 1rem;
