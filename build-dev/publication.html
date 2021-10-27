@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Default title</title>
+
+
+
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+  <div class="site-wrap">
+    <header class="header js-header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <div class="header__phone">
+              <a href="tel:+78004443435" class="header__phone-link link" target="_blank">8 800 444 34 35</a>
+              <span class="header__phone-text">бесплатный звонок по&nbsp;России</span>
+            </div>
+
+            <div class="user-actions">
+              <a href="mailto:info@alfazvuk.ru" class="user-actions__item link" target="_blank">info@alfazvuk.ru</a>
+              <a href="#" class="user-actions__item link">Обратный звонок</a>
+              <a href="#" class="user-actions__item _search link">
+                <svg>
+                  <use xlink:href="assets/sprite.svg#loupe"></use>
+                </svg>
+                <span>Поиск</span>
+              </a>
+            </div>
+
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a href="https://t.me/username" class="social-list__link">
+                  <svg class="social-list__icon">
+                    <use xlink:href="assets/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="https://wa.me/89169598565" class="social-list__link">
+                  <svg class="social-list__icon">
+                    <use xlink:href="assets/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__nav">
+        <div class="container">
+          <div class="header__nav-inner">
+            <div class="header__logo-wrap">
+              <a href="/" class="header__logo-link">
+                <img src="assets/img/logo@1x.png" srcset="assets/img/logo@2x.png 2x" class="header__logo-img" alt="alfa-tech лого">
+              </a>
+            </div>
+            <a href="#" class="header__catalog-link">
+              <svg>
+                <use xlink:href="assets/sprite.svg#catalog"></use>
+              </svg>
+              <span>Каталог</span>
+            </a>
+            <nav class="header__mobile-menu">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Комплексные решения</a>
+                </li>
+                <li class="header__nav-item _nested">
+                  <a href="#" class="header__nav-link">
+                    <span>Услуги</span>
+                    <svg>
+                      <use xlink:href="assets/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="header__nested-list">
+                    <li class="header__nested-item">
+                      <a href="#" class="header__nested-link">Проектирование</a>
+                    </li>
+                    <li class="header__nested-item">
+                      <a href="#" class="header__nested-link">Монтаж и&nbsp;установка</a>
+                    </li>
+                    <li class="header__nested-item">
+                      <a href="#" class="header__nested-link">Поставка оборудования</a>
+                    </li>
+                    <li class="header__nested-item">
+                      <a href="#" class="header__nested-link">Гарантийное и&nbsp;постгарантийное обслуживание</a>
+                    </li>
+                    <li class="header__nested-item">
+                      <a href="#" class="header__nested-link">Техническая поддержка</a>
+                    </li>
+                    <li class="header__nested-item">
+                      <a href="#" class="header__nested-link">Подбор музыкального контента</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">О компании</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Портфолио</a>
+                </li>
+                <li class="header__nav-item _bordered">
+                  <a href="#" class="header__nav-link">Публикации</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Контакты</a>
+                </li>
+                <li class="header__nav-item _user-actions">
+                  <div class="user-actions">
+                    <a href="mailto:info@alfazvuk.ru" class="user-actions__item link" target="_blank">info@alfazvuk.ru</a>
+                    <a href="#" class="user-actions__item link">Обратный звонок</a>
+                    <a href="#" class="user-actions__item _search link">
+                      <svg>
+                        <use xlink:href="assets/sprite.svg#loupe"></use>
+                      </svg>
+                      <span>Поиск</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__menu-toggle js-menu-toggle" type="button">
+              <svg class="header__menu-icon _open">
+                <use xlink:href="assets/sprite.svg#menu"></use>
+              </svg>
+              <svg class="header__menu-icon _close">
+                <use xlink:href="assets/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <main class="site-content">
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Главная</a><span class="breadcrumbs__arrow"></span>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Категория</a>
+              <span class="breadcrumbs__arrow"></span>
+            </li>
+            <li class="breadcrumbs__item">
+              <span href="#" class="breadcrumbs__link">Каталог</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <section class="publication">
+        <div class="container">
+          <h1 class="publication__title title">Публикации</h1>
+          <ul class="publication__list">
+            <li class="publication__item">
+              <a href="#" class="publication__link">
+                <p class="publication__item-date">12.02.2021</p>
+                <h2 class="publication__item-title">Как подобрать звукоизоляционную кабину кабину кабину кабину кабину кабину</h2>
+                <p class="publication__label">полезно знать</p>
+                <img class="publication__img" src="assets/img/publication/big.jpg" alt="">
+              </a>
+            </li>
+            <li class="publication__item">
+              <a href="#" class="publication__link">
+                <p class="publication__item-date">12.02.2021</p>
+                <h2 class="publication__item-title">Как подобрать звукоизоляционную кабину кабину кабину кабину кабину</h2>
+                <p class="publication__label">полезно знать</p>
+                <img class="publication__img" src="assets/img/publication/small.jpg" alt="">
+              </a>
+            </li>
+            <li class="publication__item">
+              <a href="#" class="publication__link">
+                <p class="publication__item-date">12.02.2021</p>
+                <h2 class="publication__item-title">Как подобрать звукоизоляционную кабину</h2>
+                <p class="publication__label">полезно знать</p>
+                <img class="publication__img" src="assets/img/publication/small.jpg" alt="">
+              </a>
+            </li>
+            <li class="publication__item">
+              <a href="#" class="publication__link">
+                <p class="publication__item-date">12.02.2021</p>
+                <h2 class="publication__item-title">Как подобрать звукоизоляционную кабину</h2>
+                <p class="publication__label">полезно знать</p>
+                <img class="publication__img" src="assets/img/publication/small.jpg" alt="">
+              </a>
+            </li>
+            <li class="publication__item">
+              <a href="#" class="publication__link">
+                <p class="publication__item-date">12.02.2021</p>
+                <h2 class="publication__item-title">Как подобрать звукоизоляционную кабину</h2>
+                <p class="publication__label">полезно знать</p>
+                <img class="publication__img" src="assets/img/publication/small.jpg" alt="">
+              </a>
+            </li>
+            <li class="publication__item">
+              <a href="#" class="publication__link">
+                <p class="publication__item-date">12.02.2021</p>
+                <h2 class="publication__item-title">Как подобрать звукоизоляционную кабину кабину кабину кабину кабину кабину</h2>
+                <p class="publication__label">новости</p>
+                <img class="publication__img" src="assets/img/publication/small.jpg" alt="">
+              </a>
+            </li>
+            <li class="publication__item">
+              <a href="#" class="publication__link">
+                <p class="publication__item-date">12.02.2021</p>
+                <h2 class="publication__item-title">Как подобрать звукоизоляционную кабину</h2>
+                <p class="publication__label">полезно знать</p>
+                <img class="publication__img" src="assets/img/publication/small.jpg" alt="">
+              </a>
+            </li>
+          </ul>
+
+          <ul class="pagination">
+            <span class="pagination__link js-pagination-link _disabled">
+    <span class="pagination__content"><svg class="pagination__icon"><use xlink:href="assets/sprite.svg#arrow-left"></use></svg></span>
+            </span>
+            <span class="pagination__link js-pagination-link _current" data-page="1">
+    <span class="pagination__content">1</span>
+            </span>
+            <a href="#" class="pagination__link js-pagination-link" data-page="2">
+              <span class="pagination__content">2</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="3">
+              <span class="pagination__content">3</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="4">
+              <span class="pagination__content">4</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="5">
+              <span class="pagination__content">5</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link _desktop _mobile" data-page="7">
+              <span class="pagination__content">...</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link _desktop _mobile" data-page="12">
+              <span class="pagination__content"><span class="pagination__content">12</span></span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link _desktop _mobile" data-page="2">
+              <span class="pagination__content"><svg  class="pagination__icon"><use xlink:href="assets/sprite.svg#arrow-right"></use></svg></span>
+            </a>
+          </ul>
+
+          <br>
+          <br>
+
+          <ul class="pagination">
+            <a href="#" class="pagination__link js-pagination-link" data-page="3">
+              <span class="pagination__content"><svg class="pagination__icon"><use xlink:href="assets/sprite.svg#arrow-left"></use></svg></span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="1">
+              <span class="pagination__content">1</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="2">
+              <span class="pagination__content">2</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="3">
+              <span class="pagination__content">3</span>
+            </a>
+            <span class="pagination__link js-pagination-link _current" data-page="4">
+    <span class="pagination__content">4</span>
+            </span>
+            <a href="#" class="pagination__link js-pagination-link" data-page="5">
+              <span class="pagination__content">5</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link _desktop _mobile" data-page="7">
+              <span class="pagination__content">...</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link _desktop _mobile" data-page="12">
+              <span class="pagination__content"><span class="pagination__content">12</span></span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link _desktop _mobile" data-page="5">
+              <span class="pagination__content"><svg  class="pagination__icon"><use xlink:href="assets/sprite.svg#arrow-right"></use></svg></span>
+            </a>
+          </ul>
+          <br>
+          <br>
+
+
+          <ul class="pagination">
+            <a href="#" class="pagination__link js-pagination-link" data-page="4">
+              <span class="pagination__content"><svg class="pagination__icon"><use xlink:href="assets/sprite.svg#arrow-left"></use></svg></span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="1">
+              <span class="pagination__content">1</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="2">
+              <span class="pagination__content">...</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="4">
+              <span class="pagination__content">4</span>
+            </a>
+            <span class="pagination__link js-pagination-link _current" data-page="5">
+    <span class="pagination__content">5</span>
+            </span>
+            <a href="#" class="pagination__link js-pagination-link" data-page="6">
+              <span class="pagination__content">6</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link _desktop _mobile" data-page="8">
+              <span class="pagination__content">...</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link _desktop _mobile" data-page="12">
+              <span class="pagination__content"><span class="pagination__content">12</span></span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link _desktop _mobile" data-page="6">
+              <span class="pagination__content"><svg  class="pagination__icon"><use xlink:href="assets/sprite.svg#arrow-right"></use></svg></span>
+            </a>
+          </ul>
+
+          <br>
+          <br>
+
+          <ul class="pagination">
+            <a href="#" class="pagination__link js-pagination-link" data-page="8">
+              <span class="pagination__content"><svg class="pagination__icon"><use xlink:href="assets/sprite.svg#arrow-left"></use></svg></span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="1">
+              <span class="pagination__content">1</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="6">
+              <span class="pagination__content">...</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="8">
+              <span class="pagination__content">8</span>
+            </a>
+            <span class="pagination__link js-pagination-link _current" data-page="9">
+    <span class="pagination__content">9</span>
+            </span>
+            <a href="#" class="pagination__link js-pagination-link" data-page="10">
+              <span class="pagination__content">10</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="11">
+              <span class="pagination__content">11</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link _desktop _mobile" data-page="12">
+              <span class="pagination__content"><span class="pagination__content">12</span></span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link _desktop _mobile" data-page="10">
+              <span class="pagination__content"><svg  class="pagination__icon"><use xlink:href="assets/sprite.svg#arrow-right"></use></svg></span>
+            </a>
+          </ul>
+
+          <br>
+          <br>
+
+          <ul class="pagination">
+            <a href="#" class="pagination__link js-pagination-link" data-page="11">
+              <span class="pagination__content"><svg class="pagination__icon"><use xlink:href="assets/sprite.svg#arrow-left"></use></svg></span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="1">
+              <span class="pagination__content">1</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="6">
+              <span class="pagination__content">...</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="8">
+              <span class="pagination__content">8</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="9">
+              <span class="pagination__content">9</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="10">
+              <span class="pagination__content">10</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="11">
+              <span class="pagination__content">11</span>
+            </a>
+            <span class="pagination__link js-pagination-link _desktop _mobile _current" data-page="12">
+    <span class="pagination__content"><span class="pagination__content">12</span></span>
+            </span>
+            <span class="pagination__link js-pagination-link _desktop _mobile _disabled" data-page="12">
+    <span class="pagination__content"><svg  class="pagination__icon"><use xlink:href="assets/sprite.svg#arrow-right"></use></svg></span>
+            </span>
+          </ul>
+
+          <br>
+          <br>
+
+          <ul class="pagination">
+            <a href="#" class="pagination__link js-pagination-link" data-page="1">
+              <span class="pagination__content"><svg class="pagination__icon"><use xlink:href="assets/sprite.svg#arrow-left"></use></svg></span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="1">
+              <span class="pagination__content">1</span>
+            </a>
+            <span class="pagination__link js-pagination-link _current" data-page="2">
+    <span class="pagination__content">2</span>
+            </span>
+            <a href="#" class="pagination__link js-pagination-link" data-page="3">
+              <span class="pagination__content">3</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="4">
+              <span class="pagination__content">4</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="5">
+              <span class="pagination__content">5</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="6">
+              <span class="pagination__content">6</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link" data-page="7">
+              <span class="pagination__content">7</span>
+            </a>
+            <a href="#" class="pagination__link js-pagination-link _desktop _mobile" data-page="3">
+              <span class="pagination__content"><svg  class="pagination__icon"><use xlink:href="assets/sprite.svg#arrow-right"></use></svg></span>
+            </a>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="container">
+          <div class="footer__main-inner">
+            <div class="footer__section">
+              <a href="/" class="footer__logo-link">
+                <img src="assets/img/logo-white@1x.png" srcset="assets/img/logo-white@2x.png 2x" class="footer__logo-img" alt="alfa-tech лого">
+              </a>
+              <p class="footer__logo-text">Комплексные решения для бизнеса</p>
+
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a href="https://t.me/username" class="social-list__link">
+                    <svg class="social-list__icon">
+                      <use xlink:href="assets/sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://wa.me/89169598565" class="social-list__link">
+                    <svg class="social-list__icon">
+                      <use xlink:href="assets/sprite.svg#whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="footer__contacts">
+                <a href="mailto:info@alfazvuk.ru" target="_blank" class="footer__email">info@alfazvuk.ru</a>
+                <div class="footer__phone">
+                  <a href="tel:88004443435" class="footer__phone-link">8 800 444 34 35</a>
+                  <p class="footer__phone-text">бесплатный звонок по России</p>
+                </div>
+              </div>
+              <a href="#" class="footer__showroom-link">Записаться в шоурум</a>
+            </div>
+            <div class="footer__section">
+              <p class="footer__info-text">Компания <br> ООО &laquo;Альфа Технолоджис&raquo;</p>
+              <p class="footer__info-text">ИНН 7733245646</p>
+              <p class="footer__info-text">127549, Г.&nbsp;Москва, ул. Пришвина, д.8, офис &#8470;&nbsp;120</p>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a href="https://t.me/username" class="social-list__link">
+                    <svg class="social-list__icon">
+                      <use xlink:href="assets/sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://wa.me/89169598565" class="social-list__link">
+                    <svg class="social-list__icon">
+                      <use xlink:href="assets/sprite.svg#whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__section">
+              <h3 class="footer__title">Комплексные решения</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Системы трансляции и речевого оповещения</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Профессиональное звуковое оборудование</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Системы видеонаблюдения</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Конференц-системы и Видеоконференцсвязь</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Все категории</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__section">
+              <h3 class="footer__title">Клиентам</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Комплексные решения</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Услуги</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <p class="footer__copyright">&copy;&nbsp;2021 &laquo;АЛЬФА ТЕХНОЛОДЖИС&raquo;</p>
+            <a href="#" target="_blank" class="footer__privacy-policy">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

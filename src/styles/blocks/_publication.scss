@@ -1,0 +1,146 @@
+.publication {
+  margin-bottom: 8rem;
+  @include breakpoint($desktop-width) {
+    margin-bottom: 10rem;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__list {
+    @include breakpoint($tablet-width) {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(24, 1fr);
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 56.25%;
+    margin-bottom: 2rem;
+    &:first-child {
+      padding-top: 64%;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include breakpoint($tablet-width) {
+      margin: 0;
+      grid-column: span 12;
+      &:nth-child(1) {
+        grid-row: span 2;
+        grid-column: span 14;
+        padding: 0;
+
+        .publication {
+          &__item-title {
+            max-width: 35.4rem;
+          }
+          &__link {
+            padding: 4rem;
+          }
+        }
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        grid-column: span 10;
+
+        .publication {
+          &__item-title {
+            margin-bottom: 1.2rem;
+            -webkit-line-clamp: 2;
+          }
+        }
+      }
+    }
+
+    @include breakpoint($desktop-width) {
+      grid-column: span 8;
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        .publication {
+          &__item-title {
+            -webkit-line-clamp: 3;
+          }
+        }
+      }
+    }
+  }
+
+  &__link {
+    @include stretchAbsolute();
+    width: 100%;
+    padding: 2rem;
+    text-decoration: none;
+    color: #fff;
+    &::after {
+      content: '';
+      @include stretchAbsolute();
+      background-color: #0F1011;
+      opacity: 0.8;
+    }
+
+    @include breakpoint($tablet-width) {
+      padding: 3rem;
+    }
+
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__item-date {
+    margin: 0;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+  }
+
+  &__item-title {
+    margin: 0;
+    margin-bottom: 1.8rem;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    @include breakpoint($tablet-width) {
+      font-size: 2.4rem;
+      margin-bottom: 1.2rem;
+    }
+    @include breakpoint($desktop-width) {
+      -webkit-line-clamp: 2;
+    }
+    @include breakpoint($note-width) {
+      -webkit-line-clamp: 3;
+    }
+  }
+
+  &__label {
+    min-width: 8.8rem;
+    width: fit-content;
+    margin: 0;
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 2.4rem;
+    background-color: #630707;
+    border-radius: 3rem;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+}
