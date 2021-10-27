@@ -1,0 +1,46 @@
+.publication-detail {
+  margin-bottom: 8rem;
+  @include breakpoint($desktop-width) {
+    margin-bottom: 10rem;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding-top: 1.2rem;
+    @include breakpoint($desktop-width) {
+      margin-bottom: 7rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+
+  &__info-item {
+    margin: 0;
+    padding: 0 1rem;
+    font-size: 1.4rem;
+    color: #5D5D5D;
+    border-right: 1px solid #DFDFDF;
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+    // max-width: 78rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    border-radius: .8rem;
+  }
+}

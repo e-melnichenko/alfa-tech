@@ -123,7 +123,7 @@
   &__mobile-menu {
     @include breakpoint-only(0, $desktop-width) {
       position: fixed;
-      bottom: calc(100 * var(--vh) - var(--header-height));
+      top: -100%;
       left: 0;
       height: calc(100 * var(--vh) - var(--header-height));
       overflow: auto;
@@ -132,7 +132,7 @@
       padding-top: 1rem;
       background-color: #fff;
       z-index: -1;
-      transition: transform .3s;
+      transition: top .3s;
     }
     @include breakpoint($desktop-width) {
       display: contents;
@@ -234,7 +234,7 @@
 
     &._user-actions {
       width: 100%;
-      @include breakpoint($desktop-width) {
+      @include breakpoint($tablet-width) {
         display: none;
       }
     }
