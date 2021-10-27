@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="format-detection" content="telephone=no">
 
-  <title>Список страниц</title>
+  <title>Default title</title>
 
 
 
@@ -144,33 +144,71 @@
 
 
     <main class="site-content">
-      <div class="container" style="margin-bottom: 100px">
-        <h1>Список страниц</h1>
-
-        <ul>
-          <li style="margin-bottom: 1rem">
-            <a href="complex-solutions.html">Комплексные решения</a>
-          </li>
-          <li style="margin-bottom: 1rem">
-            <a href="complex-solutions-category.html">Комплексные решения - категория</a>
-          </li>
-          <li style="margin-bottom: 1rem">
-            <a href="complex-solutions-card.html">Комплексные решения - карточка</a>
-          </li>
-          <li style="margin-bottom: 1rem">
-            <a href="portfolio.html">Портфолио</a>
-          </li>
-          <li style="margin-bottom: 1rem">
-            <a href="portfolio-detail.html">Портфолио - детальная</a>
-          </li>
-          <li style="margin-bottom: 1rem">
-            <a href="services.html">Услуги</a>
-          </li>
-          <li style="margin-bottom: 1rem">
-            <a href="services-detail.html">Услуги - детальная</a>
-          </li>
-        </ul>
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Главная</a><span class="breadcrumbs__arrow"></span>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Категория</a>
+              <span class="breadcrumbs__arrow"></span>
+            </li>
+            <li class="breadcrumbs__item">
+              <span href="#" class="breadcrumbs__link">Каталог</span>
+            </li>
+          </ul>
+        </div>
       </div>
+
+      <section class="services-detail">
+        <div class="container">
+          <div class="tabs js-tabs">
+            <div class="tabs__nav js-scroll-container">
+              <ul class="tabs__nav-list">
+                <li class="tabs__nav-item js-tab-nav _active" data-index="0" data-content="Проектирование">Проектирование</li>
+                <li class="tabs__nav-item js-tab-nav" data-index="1" data-content="Монтаж и&nbsp;установка">Монтаж и&nbsp;установка</li>
+                <li class="tabs__nav-item js-tab-nav" data-index="2" data-content="Поставка оборудования">Поставка оборудования</li>
+                <li class="tabs__nav-item js-tab-nav" data-index="3" data-content="Обслуживание">Обслуживание</li>
+                <li class="tabs__nav-item js-tab-nav" data-index="4" data-content="Техническая поддержка">Техническая поддержка</li>
+                <li class="tabs__nav-item js-tab-nav" data-index="5" data-content="Подбор контента">Подбор контента</li>
+              </ul>
+            </div>
+            <div class="tabs__content">
+              <div class="tabs__item js-tab-content _active" data-index="0">
+                <div class="services-detail__banner" style="background-image: url('assets/img/services-detail.jpg')">
+                  <h2 class="services-detail__title title">Проектирование</h2>
+                </div>
+                <div class="content">
+                  <p>Акустический расчет помещения применяется для расчета акустики самых разнообразных помещений. Это важный этап создания благоприятной атмосферы в проектируемом помещении.</p>
+                  <p>Недостаточно просто расставить громкоговорители в произвольном порядке, главное - произвести расчет, чтобы посетителям и сотрудникам было комфортно находиться в помещении. А благодаря акустическому проекту, Вы еще на бумаге сможете оценить возможности звукового комплекса, увидите уровни звукового распределения и месторасположение звукового оборудования.</p>
+                  <p>Акустические расчеты создаются не только для проектируемого помещения, но и для уже работающего объекта. Для каждого из этих случаев нами будет предложено индивидуальное решение, учитывающее качества помещения, архитектурные особенности, его специфику и концепцию.</p>
+                  <p>На первом этапе проектирования звукового комплекса выявляются особенности помещения:</p>
+                  <p>
+                    - Тип и назначение объекта;<br>
+              - Объем и площадь;<br>
+              - Уровень шума в помещении;<br>
+              - Зонирование помещения;<br>
+              - Дизайн и интерьер помещения;<br>
+              - Характеристики целевой аудитории.
+                  </p>
+                  <p>Второй этап проектирования заключается в построении акустической модели Вашего помещения, учитывающей все особенности объекта.</p>
+                  <p>Такая модель строится в специальных компьютерных программах и определяет: неравномерности распределения звука по всему помещению (допустимый уровень ±2 Дб), уровни звукового давления (оптимальный уровень 90-100 дБ). Все расчеты наши специалисты производят на основе существующих ГОСТов, СНиПов, нормативных и регламентирующих документов.</p>
+                  <p>На основе данных расчета определяются параметры звукового оборудования: количество, тип и мощность динамиков.</p>
+                  <p>Звуковой комплекс, как правило, включает в себя громкоговорители, источники звукового сигнала, усилители мощности и разнообразное дополнительное оборудование - суббасовые системы, настольные и радиомикрофоны, выносные аттенюаторы, стойки для установки оборудования и многое другое. Все необходимое оборудование подбирается индивидуально с учетом акустических особенностей проектируемого помещения и пожеланий заказчика.</p>
+                  <p>Если Вам необходима квалифицированная помощь по установке, эксплуатации и обслуживанию оборудования, свяжитесь с нами по телефону: <a href="tel:(925) 070-69-39">8 (804) 333 75 76</a> бесплатный звонок по России, Офис-Москва <a href="tel:(925) 070-69-39">(495) 644-40-32</a> или <a href="tel:(925) 070-69-39">(925) 070-69-39</a>.</p>
+                </div>
+              </div>
+              <div class="tabs__item js-tab-content" data-index="1">Монтаж и&nbsp;установка</div>
+              <div class="tabs__item js-tab-content" data-index="2">Поставка оборудования</div>
+              <div class="tabs__item js-tab-content" data-index="3">Обслуживание</div>
+              <div class="tabs__item js-tab-content" data-index="4">Техническая поддержка</div>
+              <div class="tabs__item js-tab-content" data-index="5">Подбор контента</div>
+            </div>
+
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
