@@ -1,0 +1,62 @@
+{% extends 'templates/base.twig' %}
+
+{% block page %}
+
+{% include 'templates/breadcrumbs.twig' %}
+
+<section class="services">
+  <div class="container">
+    <h1 class="services__title title">Услуги</h1>
+    <ul class="services__list">
+    {% set list = [
+      {
+        title: 'Проектирование',
+        desc: 'Если Вы&nbsp;хотите создать в&nbsp;помещении приятный музыкальный фон или решить с&nbsp;помощью озвучивания проблему лишних шумов, то&nbsp;начинать работу над созданием системы фонового звучания и&nbsp;комфортной музыкальной атмосферы нужно с&nbsp;акустического проектирования.',
+        icon: 'design'
+      },
+      {
+        title: 'Монтаж и&nbsp;установка',
+        desc: 'Мы&nbsp;не&nbsp;только проектируем звуковое оборудование. Вы&nbsp;всегда можете рассчитывать на&nbsp;поддержку наших специалистов по&nbsp;монтажу. Мы&nbsp;в&nbsp;кратчайшие сроки и&nbsp;с&nbsp;неизменным качеством соберем, установим и&nbsp;подключим все необходимое оборудование.',
+        icon: 'speaker'
+      },
+      {
+        title: 'Поставка оборудования',
+        desc: 'Мы&nbsp;готовы предложить Вам самые выгодные условия на&nbsp;поставку широкого перечня оборудования. Постоянно поддерживаемый на&nbsp;складе ассортимент многих позиций, сжатые сроки поставки, различные варианты оплаты и&nbsp;доставки&nbsp;&mdash; вот преимущества работы с&nbsp;нами.',
+        icon: 'box'
+      },
+      {
+        title: 'Гарантийное и&nbsp;постгарантийное обслуживание',
+        desc: 'На&nbsp;все поставляемое оборудование предоставляется гарантия. Если у&nbsp;Вас возникнут проблемы с&nbsp;работой оборудования, Вы&nbsp;можете обратиться в&nbsp;нашу сервисную службу, и&nbsp;в&nbsp;кратчайшие сроки проблема будет решена.',
+        icon: 'speaker_and_mic'
+      },
+      {
+        title: 'Техническая поддержка',
+        desc: 'Вы&nbsp;можете воспользоваться любыми контактами, указанными на&nbsp;сайте. Вам не&nbsp;откажут в&nbsp;помощи, проконсультируют, предоставят схемы подключения, мануалы. Вашей проблемой будут заниматься вплоть до&nbsp;её&nbsp;решения.',
+        icon: 'message'
+      },
+      {
+        title: 'Подбор музыкального контента',
+        desc: 'Как подобрать музыкальный контент, который привлечет новых клиентов? Как правильно организовать трансляцию музыки и&nbsp;при этом не&nbsp;нарушить закон? Как соблюсти все юридические формальности?',
+        icon: 'headphones'
+      },
+    ] %}
+
+
+    {% for item in list %}
+      <li class="services__item">
+        <a href="#" class="services__link">
+          <div class="services__item-top">
+            <svg class="services__item-icon"><use xlink:href="assets/sprite.svg#{{ item.icon }}"></use></svg>
+            <h3 class="services__item-title">{{ item.title }}</h3>
+          </div>
+          <p class="services__item-desc">{{ item.desc }}</p>
+          <svg class="services__item-arrow"><use xlink:href="assets/sprite.svg#arrow-right"></use></svg>
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% include 'templates/info.twig' %}
+{% endblock %}

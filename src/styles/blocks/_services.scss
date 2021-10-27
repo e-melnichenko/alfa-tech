@@ -1,0 +1,98 @@
+.services {
+  margin-bottom: 8rem;
+  @include breakpoint($desktop-width) {
+    margin-bottom: 10rem;
+  }
+
+  &__title {
+    margin-bottom: 3rem;
+  }
+
+  &__list {
+    @include breakpoint($desktop-width) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -2rem;
+      margin-right: -2rem;
+    }
+  }
+
+  &__item {
+    margin-bottom: 2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include breakpoint($desktop-width) {
+      display: flex;
+      width: calc(50% - 2rem);
+      margin-right: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #F3F3F3;
+    text-decoration: none;
+    color: #000;
+    border-radius: .8rem;
+    @include breakpoint($desktop-width) {
+      min-height: 42rem;
+      padding: 4rem;
+    }
+    @include breakpoint($desktop-lg-width) {
+      min-height: 40rem;
+    }
+  }
+
+  &__item-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+  }
+
+  &__item-icon {
+    flex-shrink: 0;
+    width: 4rem;
+    height: 4rem;
+    margin-right: 2rem;
+  }
+
+  &__item-title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    @include breakpoint($tablet-width) {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__item-desc {
+    margin: 0;
+    margin-top: auto;
+    font-size: 1.4rem;
+    line-height: 1.44;
+    color: #4F4F4F;
+    @include breakpoint($desktop-width) {
+      padding-right: 24%;
+    }
+  }
+
+  &__item-arrow {
+    display: none;
+    @include breakpoint($desktop-width) {
+      position: absolute;
+      bottom: 4rem;
+      right: 4rem;
+      display: block;
+      width: 3rem;
+      height: 2rem;
+      fill: #000;
+    }
+  }
+}
