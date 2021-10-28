@@ -1,0 +1,92 @@
+{% extends 'templates/base.twig' %}
+
+{% block page %}
+
+{% include 'templates/breadcrumbs.twig' %}
+
+<section class="catalog">
+  <div class="container">
+    <h1 class="catalog__title title">Каталог оборудования</h1>
+    <ul class="catalog__list">
+    {% set list = [
+      {
+        title: 'Harman',
+        img: 'harman.png'
+      },
+      {
+        title: 'AKG',
+        img: 'akg.png'
+      },
+      {
+        title: 'Lexicon',
+        img: 'lexicon.png'
+      },
+      {
+        title: 'Crown',
+        img: 'crown.png'
+      },
+      {
+        title: 'JBL',
+        img: 'jbl.png'
+      },
+      {
+        title: 'TC Electronic',
+        img: 'tc-electronic.png'
+      },
+      {
+        title: 'Rode',
+        img: 'rode.png'
+      },
+      {
+        title: 'Shure',
+        img: 'shure.png'
+      },
+      {
+        title: 'RME',
+        img: 'rme.png'
+      },
+      {
+        title: 'Behringer',
+        img: 'behringer.png'
+      },
+      {
+        title: 'Midas',
+        img: 'midas.png'
+      },
+      {
+        title: 'Genelec',
+        img: 'genelec.png'
+      },
+      {
+        title: 'Neutrik',
+        img: 'neutrik.png'
+      },
+      {
+        title: 'DBX',
+        img: 'dbx.png'
+      },
+      {
+        title: 'DigiTech',
+        img: 'digiTech.png'
+      },
+      {
+        title: 'Soundcraft',
+        img: 'soundcraft.png'
+      },
+    ] %}
+
+    {% for item in list %}
+      <li class="catalog__item">
+        <a href="#" class="catalog__link">
+          <h3 class="catalog__item-title">{{ item.title }}</h3>
+          <img class="catalog__item-img" src="assets/img/producers/{{ item.img }}" alt="">
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% include 'templates/info.twig' %}
+
+{% endblock %}

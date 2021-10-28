@@ -47,7 +47,8 @@ export const PLACEMARKS = [
       iconLayout: 'default#image',
       iconImageHref: 'assets/img/placemark.svg',
       // iconImageHref: `${BASE_URL}/upload/static/img/placemark.svg`,
-      iconImageSize: [30, 42],
+      iconImageSize: [40, 50],
+      iconImageOffset: [-20, -50]
     },
   }
 ];

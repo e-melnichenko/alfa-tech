@@ -69,6 +69,7 @@
     &::placeholder {
       color: #9A9A9A;
     }
+
   }
 
   &__policy {
@@ -89,6 +90,11 @@
       &__text-input {
         background-color: #ECECEC;
         border-color: #ECECEC;
+
+        &:focus {
+          background-color: #fff;
+          border-color: #000;
+        }
       }
     }
   }

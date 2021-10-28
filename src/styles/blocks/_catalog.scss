@@ -1,0 +1,79 @@
+.catalog {
+  margin-bottom: 8rem;
+  @include breakpoint($desktop-width) {
+    margin-bottom: 10rem;
+  }
+
+  &__title {
+    margin-bottom: 4rem;
+  }
+
+  &__list {
+    @include breakpoint($tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+    }
+    @include breakpoint($desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__item {
+    // position: relative;
+    margin-bottom: 2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @include breakpoint($tablet-width) {
+      position: relative;
+      margin: 0;
+      padding-top: 100%;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 20rem;
+    padding: 2rem;
+    text-decoration: none;
+    color: #3F3F3F;
+    border: 1px solid #E1E1E1;
+    @include breakpoint($tablet-width) {
+      @include stretchAbsolute();
+      padding: 3rem 2rem;
+    }
+  }
+
+  &__item-title {
+    position: relative;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    font-weight: 500;
+    @include breakpoint($desktop-width) {
+      padding-left: 1rem;
+    }
+    @include breakpoint($desktop-lg-width) {
+      font-size: 2.8rem;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: -2rem;
+      top: 0;
+      height: 100%;
+      width: 0.7rem;
+      background-color: $color-main;
+    }
+  }
+
+  &__item-img {
+    display: block;
+    margin: auto;
+  }
+
+}
