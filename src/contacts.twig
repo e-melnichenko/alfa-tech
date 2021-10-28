@@ -1,0 +1,49 @@
+{% extends 'templates/base.twig' %}
+
+{% set pageName = 'contacts' %}
+
+{% block page %}
+
+{% include 'templates/breadcrumbs.twig' %}
+
+<section class="contacts">
+  <div class="container">
+    <div class="contacts__inner">
+      <div class="contacts__content">
+        <h1 class="contacts__title title">Контакты</h1>
+        <p class="contacts__company-name">ООО «Альфа Технолоджис» /ИНН 7733245646</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Адрес</h3>
+            <p class="contacts__item-value">127549, Г.&nbsp;Москва, ул. Пришвина, д.8, офис &#8470;&nbsp;120</p>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Бесплатный звонок по России</h3>
+            <a href="tel:8 (800) 444 34 35" class="contacts__item-value">8 (800) 444 34 35</a>
+          </li>
+          <li class="contacts__item _row">
+            <div class="contacts__item-wrap">
+              <h3 class="contacts__item-title">Соц. сети</h3>
+              <a href="tel:8 (916) 959 85 65 " class="contacts__item-value">8 (916) 959 85 65 </a>
+            </div>
+            {% include 'templates/social-list.twig' %}
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">E-mail</h3>
+            <a href="mailto:info@alfazvuk.ru" target="_blank" class="contacts__item-value">info@alfazvuk.ru</a>
+          </li>
+          <li class="contacts__item">
+            <h3 class="contacts__item-title">Режим работы</h3>
+            <p class="contacts__item-value">
+              Мы работаем <b>каждый будний день с 10:00 до 18:00</b> <br>
+              Выходные дни: Суббота, Воскресенье
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts__map js-map" id="contacts-map"></div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

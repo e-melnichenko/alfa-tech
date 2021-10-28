@@ -1,0 +1,90 @@
+.contacts {
+  margin-bottom: 5rem;
+
+  &__inner {
+    @include breakpoint($desktop-width) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__content {
+    margin-bottom: 4rem;
+    @include breakpoint($desktop-width) {
+      margin-bottom: 0;
+      width: 48%;
+    }
+  }
+
+
+  &__map {
+    height: 30rem;
+    @include breakpoint($desktop-width) {
+      width: 48%;
+      height: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3.2rem;
+  }
+
+  &__company-name {
+    margin: 0;
+    margin-bottom: 3.6rem;
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+
+  &__list {}
+
+  &__item {
+    position: relative;
+    margin-bottom: 4rem;
+    padding-left: 2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 0.7rem;
+      background-color: $color-main;
+    }
+
+    &._row {
+      display: flex;
+      align-items: center;
+    }
+
+    b {
+      font-weight: 500;
+    }
+  }
+
+  &__item-title {
+    margin: 0;
+    margin-bottom: .8rem;
+    font-weight: 400;
+    color: #585858;
+  }
+
+  &__item-value {
+    margin: 0;
+    text-decoration: none;
+    color: #000;
+    line-height: 2rem;
+  }
+
+
+  .social-list {
+    margin-left: 2rem;
+    &__link {
+      background-color: #ECECEC;
+    }
+  }
+}

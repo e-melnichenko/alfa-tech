@@ -14,11 +14,8 @@ export default class Slider {
       this._addCallbacks(splide, config[name].callbacks);
 
       splide.mount();
-      // debugger
-      window.splide = splide
-      // debugger
+
       if(splide.options.perPage >= splide.length) {
-        console.log('hi')
         splide.options = {
           ...splide.options,
           arrows: false
@@ -26,11 +23,7 @@ export default class Slider {
         Object.keys(splide.options.breakpoints).forEach(breakpoint => {
           splide.options.breakpoints[breakpoint].arrows = false
         })
-
-        // splide.refresh();
       }
-
-
     })
   }
 

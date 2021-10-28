@@ -37,3 +37,16 @@ export const sliders = {
   }
 }
 
+export const placemarkList = [
+  {
+    coords: [55.888942, 37.595195],
+    properties: {},
+    options: {
+      iconLayout: 'default#image',
+      iconImageHref: 'assets/img/placemark.svg',
+      // iconImageHref: `${BASE_URL}/upload/static/img/placemark.svg`,
+      iconImageSize: [30, 42],
+    },
+  }
+];
+
