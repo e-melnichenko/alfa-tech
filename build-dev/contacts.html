@@ -218,6 +218,55 @@
         </div>
       </section>
 
+      <section class="feedback">
+        <div class="container">
+          <h2 class="feedback__title title">Обратная связь</h2>
+          <form action="action-url" class="feedback__form form _grey js-form" data-name="feedback">
+            <div class="feedback__fields">
+              <div class="feedback__text-inputs">
+                <div class="form__item js-form-item">
+                  <input type="text" placeholder="Ваше имя" class="form__text-input" name="name">
+                </div>
+                <div class="form__item js-form-item">
+                  <input type="text" placeholder="Название организации" class="form__text-input" name="organization">
+                </div>
+                <div class="form__item js-form-item">
+                  <input type="text" placeholder="Телефон*" class="form__text-input js-required js-phone-mask" inputmode="numeric" name="phone" data-name="phone">
+                </div>
+                <div class="form__item js-form-item">
+                  <input type="text" placeholder="E-mail" class="form__text-input" name="email">
+                </div>
+              </div>
+              <div class="form__item feedback__textarea-wrap js-form-item">
+                <textarea class="form__text-input feedback__textarea js-required" name="message" data-name="message" placeholder="Сообщение"></textarea>
+              </div>
+            </div>
+            <div class="feedback__form-bottom">
+              <button class="feedback__submit-btn btn" type="submit">Отправить</button>
+              <div class="form__policy">
+                <label class="form__checkbox js-form-item">
+                  <input class="form__checkbox-input js-required" type="checkbox" name="privacy-policy">
+                  <span class="form__checkbox-text">
+              <span>Нажимая кнопку “отправить” я даю согласие на обработку персональных данных в соответсвие с <a href="#" target="_blank" class="link">политикой конфиденциальности</a></span>
+                  </span>
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="popup js-popup" id="feedback-success-popup">
+          <button class="popup__close-btn js-close-popup" type="button">
+            <svg>
+              <use xlink:href="assets/sprite.svg#close"></use>
+            </svg>
+          </button>
+          <div class="popup__inner">
+            <h3 class="title">Ваша заявка отправлена</h3>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer class="footer">
@@ -323,6 +372,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup js-popup" id="error-popup">
+      <button class="popup__close-btn js-close-popup" type="button">
+        <svg>
+          <use xlink:href="assets/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <h3 class="title popup__title _centered">Что-то пошло не так.</h3>
+      </div>
+    </div>
   </div>
 
   <script src="./js/main.js"></script>

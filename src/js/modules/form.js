@@ -1,26 +1,7 @@
-import HeaderCart from "./headerCart";
+import { FORMS } from "../config";
 import Popup from "./Popup";
 
 export default function initForm() {
-  const config = {
-    "add-to-cart": {
-      onSuccess() {
-        Popup.open('order-success-popup');
-        HeaderCart.update();
-      },
-    },
-    "call-back-success-popup": {
-      onSuccess() {
-        Popup.open('call-back-success-popup')
-      },
-    },
-    "feedback-success-popup": {
-      onSuccess() {
-        Popup.open('feedback-success-popup')
-      },
-    },
-  }
-
   document.addEventListener('submit', async function(e) {
     const form = e.target.closest('.js-form');
     if(!form) return
@@ -30,17 +11,17 @@ export default function initForm() {
     if (!isFormCorrect(form)) return
 
     const formData = new FormData(form);
-    const {method, action} = form;
+    const { action } = form;
 
     const res = await fetch(action, {
-      method,
+      method: 'post',
       body: formData
     });
 
     const formName = form.dataset.name;
 
     if(res.ok) {
-      config[formName].onSuccess()
+      FORMS[formName].onSuccess()
       form.reset();
     } else {
       Popup.open('error-popup')

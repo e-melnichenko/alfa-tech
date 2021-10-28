@@ -1,0 +1,82 @@
+.feedback {
+  margin-bottom: 6rem;
+
+  &__title {
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+    @include breakpoint($desktop-width) {
+      margin-bottom: 3.8rem;
+      font-size: 3.2rem;
+    }
+  }
+
+  &__fields {
+    margin-bottom: 1.5rem;
+    @include breakpoint($desktop-width) {
+      display: flex;
+      margin-right: -2rem;
+    }
+  }
+
+  &__text-inputs {
+    margin-bottom: 1.5rem;
+    @include breakpoint($tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: -2rem;
+
+      .form__item {
+        width: calc(50% - 1rem);
+        margin: 0;
+        margin-top: 2rem;
+      }
+    }
+
+    @include breakpoint($desktop-width) {
+      width: calc(50% - 2rem);
+      margin-right: 2rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__textarea-wrap {
+    @include breakpoint($desktop-width) {
+      width: calc(50% - 2rem);
+      display: flex;
+    }
+  }
+
+  &__textarea {
+    height: 15rem;
+    @include breakpoint($desktop-width) {
+      height: auto;
+    }
+  }
+
+  &__submit-btn {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    @include breakpoint($tablet-width) {
+      width: 30rem;
+      flex-shrink: 0;
+      margin-bottom: 0;
+    }
+    @include breakpoint($desktop-width) {
+      width: 40rem;
+    }
+  }
+
+  &__form-bottom {
+    @include breakpoint($tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+
+      .form__policy {
+        margin-right: 2.4rem;
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import { placemarkList } from "../config";
+import { PLACEMARKS } from "../config";
 import YMap from "./YMap";
 
 export default function initContactsMap() {
@@ -7,11 +7,11 @@ export default function initContactsMap() {
 
   ymaps.ready(() => {
     const contactsMap = new YMap('contacts-map', {
-      center: placemarkList[0]?.coords,
+      center: PLACEMARKS[0]?.coords,
       zoom: 16,
       controls: ['zoomControl'],
     });
 
-    placemarkList.forEach(config => contactsMap.addPlacemark(config))
+    PLACEMARKS.forEach(config => contactsMap.addPlacemark(config))
   })
 }

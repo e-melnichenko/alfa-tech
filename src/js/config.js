@@ -1,11 +1,13 @@
-const breakpoints = {
+import Popup from "./modules/Popup";
+
+const BREAKPOINTS = {
   tablet: 768,
   desktop: 1200,
   note: 1440,
   desktopLg: 1600,
 }
 
-export const sliders = {
+export const SLIDERS = {
   'news-list': {
     options: {
       mediaQuery: 'min',
@@ -15,7 +17,7 @@ export const sliders = {
       padding: {left: '2rem', right: '5rem'},
       arrows: false,
       breakpoints: {
-        [breakpoints.desktop]: {
+        [BREAKPOINTS.desktop]: {
           perPage: 3,
           fixedWidth: false,
           padding: null,
@@ -37,7 +39,7 @@ export const sliders = {
   }
 }
 
-export const placemarkList = [
+export const PLACEMARKS = [
   {
     coords: [55.888942, 37.595195],
     properties: {},
@@ -49,4 +51,12 @@ export const placemarkList = [
     },
   }
 ];
+
+export const FORMS = {
+  'feedback': {
+    onSuccess() {
+      Popup.open('feedback-success-popup')
+    }
+  }
+}
 

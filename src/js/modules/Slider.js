@@ -1,5 +1,5 @@
 import Splide from "@splidejs/splide";
-import { sliders as config } from "../config";
+import { SLIDERS } from "../config";
 
 export default class Slider {
   constructor() {
@@ -9,9 +9,9 @@ export default class Slider {
   _init() {
     document.querySelectorAll('.js-slider').forEach(slider => {
       const name = slider.dataset.name;
-      const splide = new Splide(slider, config[name].options);
+      const splide = new Splide(slider, SLIDERS[name].options);
 
-      this._addCallbacks(splide, config[name].callbacks);
+      this._addCallbacks(splide, SLIDERS[name].callbacks);
 
       splide.mount();
 

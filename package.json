@@ -57,7 +57,8 @@
   "browserslist": [
     "iOS >= 12",
     "last 2 versions",
+    "> 0.5%",
     "not dead",
-    "> 0.5%"
+    "not IE 11"
   ]
 }
