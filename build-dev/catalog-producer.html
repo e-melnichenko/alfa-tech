@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Default title</title>
+
+  <link rel="preload" href="./assets/fonts/GothamPro/GothamPro-Regular.woff2" as="font" crossorigin="anonymous" />
+  <link rel="preload" href="./assets/fonts/GothamPro/GothamPro-Medium.woff2" as="font" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+
+<body>
+  <div class="site-wrap">
+    <header class="header js-header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <div class="header__phone">
+              <a href="tel:+78004443435" class="header__phone-link link" target="_blank">8 800 444 34 35</a>
+              <span class="header__phone-text">бесплатный звонок по&nbsp;России</span>
+            </div>
+
+            <div class="user-actions">
+              <a href="mailto:info@alfazvuk.ru" class="user-actions__item link" target="_blank">info@alfazvuk.ru</a>
+              <a href="#" class="user-actions__item link">Обратный звонок</a>
+              <a href="#" class="user-actions__item _search link">
+                <svg>
+                  <use xlink:href="assets/sprite.svg#loupe"></use>
+                </svg>
+                <span>Поиск</span>
+              </a>
+            </div>
+
+            <ul class="social-list">
+              <li class="social-list__item">
+                <a href="https://t.me/username" class="social-list__link">
+                  <svg class="social-list__icon">
+                    <use xlink:href="assets/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a href="https://wa.me/89169598565" class="social-list__link">
+                  <svg class="social-list__icon">
+                    <use xlink:href="assets/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__nav">
+        <div class="container">
+          <div class="header__nav-inner">
+            <div class="header__logo-wrap">
+              <a href="/" class="header__logo-link">
+                <img src="assets/img/logo@1x.png" srcset="assets/img/logo@2x.png 2x" class="header__logo-img" alt="alfa-tech лого">
+              </a>
+            </div>
+            <a href="#" class="header__catalog-link">
+              <svg>
+                <use xlink:href="assets/sprite.svg#catalog"></use>
+              </svg>
+              <span>Каталог</span>
+            </a>
+            <nav class="header__mobile-menu">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Комплексные решения</a>
+                </li>
+                <li class="header__nav-item _nested">
+                  <a href="#" class="header__nav-link">
+                    <span>Услуги</span>
+                    <svg>
+                      <use xlink:href="assets/sprite.svg#chevron-down"></use>
+                    </svg>
+                  </a>
+                  <ul class="header__nested-list">
+                    <li class="header__nested-item">
+                      <a href="#" class="header__nested-link">Проектирование</a>
+                    </li>
+                    <li class="header__nested-item">
+                      <a href="#" class="header__nested-link">Монтаж и&nbsp;установка</a>
+                    </li>
+                    <li class="header__nested-item">
+                      <a href="#" class="header__nested-link">Поставка оборудования</a>
+                    </li>
+                    <li class="header__nested-item">
+                      <a href="#" class="header__nested-link">Гарантийное и&nbsp;постгарантийное обслуживание</a>
+                    </li>
+                    <li class="header__nested-item">
+                      <a href="#" class="header__nested-link">Техническая поддержка</a>
+                    </li>
+                    <li class="header__nested-item">
+                      <a href="#" class="header__nested-link">Подбор музыкального контента</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">О компании</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Портфолио</a>
+                </li>
+                <li class="header__nav-item _bordered">
+                  <a href="#" class="header__nav-link">Публикации</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link">Контакты</a>
+                </li>
+                <li class="header__nav-item _user-actions">
+                  <div class="user-actions">
+                    <a href="mailto:info@alfazvuk.ru" class="user-actions__item link" target="_blank">info@alfazvuk.ru</a>
+                    <a href="#" class="user-actions__item link">Обратный звонок</a>
+                    <a href="#" class="user-actions__item _search link">
+                      <svg>
+                        <use xlink:href="assets/sprite.svg#loupe"></use>
+                      </svg>
+                      <span>Поиск</span>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <button class="header__menu-toggle js-menu-toggle" type="button">
+              <svg class="header__menu-icon _open">
+                <use xlink:href="assets/sprite.svg#menu"></use>
+              </svg>
+              <svg class="header__menu-icon _close">
+                <use xlink:href="assets/sprite.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="site-content">
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Главная</a><span class="breadcrumbs__arrow"></span>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="#" class="breadcrumbs__link">Категория</a>
+              <span class="breadcrumbs__arrow"></span>
+            </li>
+            <li class="breadcrumbs__item">
+              <span href="#" class="breadcrumbs__link">Каталог</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <section class="category">
+        <div class="container">
+          <div class="category__inner">
+            <div class="category__desc">
+              <div class="category__top">
+                <div class="category__title-wrap">
+                  <img src="assets/img/catalog/logo-mini.png" alt="" class="category__logo">
+                  <h1 class="category__title title">Behringer</h1>
+                </div>
+                <a href="www.behringer.com" target="_blank" class="category__link link">www.behringer.com</a>
+              </div>
+              <p class="category__desc-text">Всемирно известная компания Behringer начала свою работу в 1989 году в Германии, следуя своему бессменному девизу «Удваиваем возможности, за полцены» (Double the Features at Half the Price). Активная деятельность компании и широкие функции предлагаемого оборудования, при крайне низкой цене, в буквальном смысле положили начало новому рынку домашней звукозаписи, ранее не существовавшему.</p>
+            </div>
+            <ul class="category__list">
+              <li class="category__item">
+                <a href="#" class="category__item-link">
+                  <h3 class="category__item-title">
+                    <span>AUDIO-интерфейсы / звукозапись</span>
+                    <span class="category__item-count">44</span>
+                  </h3>
+                  <div class="category__item-bottom">
+                    <svg class="category__item-arrow">
+                      <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                    </svg>
+                    <img src="assets/img/catalog/audio-interface.png" alt="" class="category__item-img">
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__item-link">
+                  <h3 class="category__item-title">
+                    <span>MIDI-клавиатуры / Синтезаторы</span>
+                    <span class="category__item-count">44</span>
+                  </h3>
+                  <div class="category__item-bottom">
+                    <svg class="category__item-arrow">
+                      <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                    </svg>
+                    <img src="assets/img/catalog/synthesiser.png" alt="" class="category__item-img">
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__item-link">
+                  <h3 class="category__item-title">
+                    <span>Аксессуары</span>
+                    <span class="category__item-count">5</span>
+                  </h3>
+                  <div class="category__item-bottom">
+                    <svg class="category__item-arrow">
+                      <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                    </svg>
+                    <img src="assets/img/catalog/accessories.png" alt="" class="category__item-img">
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__item-link">
+                  <h3 class="category__item-title">
+                    <span>Педали эффектов бас-гитарные</span>
+                    <span class="category__item-count">44</span>
+                  </h3>
+                  <div class="category__item-bottom">
+                    <svg class="category__item-arrow">
+                      <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                    </svg>
+                    <img src="assets/img/catalog/effect-pedal-bass.png" alt="" class="category__item-img">
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__item-link">
+                  <h3 class="category__item-title">
+                    <span>Педали эффектов гитарные</span>
+                    <span class="category__item-count">44</span>
+                  </h3>
+                  <div class="category__item-bottom">
+                    <svg class="category__item-arrow">
+                      <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                    </svg>
+                    <img src="assets/img/catalog/effect-pedal-guitar.png" alt="" class="category__item-img">
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__item-link">
+                  <h3 class="category__item-title">
+                    <span>Комбоусилители для бас-гитар</span>
+                    <span class="category__item-count">44</span>
+                  </h3>
+                  <div class="category__item-bottom">
+                    <svg class="category__item-arrow">
+                      <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                    </svg>
+                    <img src="assets/img/catalog/combo-amp-bass.png" alt="" class="category__item-img">
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__item-link">
+                  <h3 class="category__item-title">
+                    <span>Комбоусилители для клавишных</span>
+                    <span class="category__item-count">44</span>
+                  </h3>
+                  <div class="category__item-bottom">
+                    <svg class="category__item-arrow">
+                      <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                    </svg>
+                    <img src="assets/img/catalog/combo-amp-keyboard.png" alt="" class="category__item-img">
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__item-link">
+                  <h3 class="category__item-title">
+                    <span>Электронные барабаны</span>
+                    <span class="category__item-count">44</span>
+                  </h3>
+                  <div class="category__item-bottom">
+                    <svg class="category__item-arrow">
+                      <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                    </svg>
+                    <img src="assets/img/catalog/electronic-drums.png" alt="" class="category__item-img">
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__item-link">
+                  <h3 class="category__item-title">
+                    <span>MIDI-контроллеры</span>
+                    <span class="category__item-count">44</span>
+                  </h3>
+                  <div class="category__item-bottom">
+                    <svg class="category__item-arrow">
+                      <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                    </svg>
+                    <img src="assets/img/catalog/midi-controller.png" alt="" class="category__item-img">
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__item-link">
+                  <h3 class="category__item-title">
+                    <span>АС и студийные мониторы</span>
+                    <span class="category__item-count">44</span>
+                  </h3>
+                  <div class="category__item-bottom">
+                    <svg class="category__item-arrow">
+                      <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                    </svg>
+                    <img src="assets/img/catalog/studio-monitor.png" alt="" class="category__item-img">
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__item-link">
+                  <h3 class="category__item-title">
+                    <span>Блоки питания (адаптеры) и аксессуары</span>
+                    <span class="category__item-count">44</span>
+                  </h3>
+                  <div class="category__item-bottom">
+                    <svg class="category__item-arrow">
+                      <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                    </svg>
+                    <img src="assets/img/catalog/headphones.png" alt="" class="category__item-img">
+                  </div>
+                </a>
+              </li>
+              <li class="category__item">
+                <a href="#" class="category__item-link">
+                  <h3 class="category__item-title">
+                    <span>Микрофоны</span>
+                    <span class="category__item-count">44</span>
+                  </h3>
+                  <div class="category__item-bottom">
+                    <svg class="category__item-arrow">
+                      <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                    </svg>
+                    <img src="assets/img/catalog/microphone.png" alt="" class="category__item-img">
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="good-set">
+        <div class="container">
+          <h2 class="good-set__title title">Популярное</h2>
+          <ul class="good-set__list">
+            <li class="good-set__item">
+              <a href="#" class="good-set__link">
+                <img src="assets/img/catalog/card-item-1.png" alt="" class="good-set__img">
+                <div class="good-set__content">
+                  <h3 class="good-set__item-title">Комбинированный микшер-усилитель CVGAUDIO ReBox-T4</h3>
+                  <p class="good-set__desc">Миниатюрный экономичный микшер – усилитель, 40W/100V, MP3 (USB/SD) плеер / FM тюнер / Bluetooth</p>
+                  <div class="good-set__bottom">
+                    <p class="good-set__price">9 999 999 ₽</p>
+                    <p class="good-set__more">
+                      <span>Подробнее</span>
+                      <svg>
+                        <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="good-set__item">
+              <a href="#" class="good-set__link">
+                <img src="assets/img/catalog/card-item-2.png" alt="" class="good-set__img">
+                <div class="good-set__content">
+                  <h3 class="good-set__item-title">Комбинированный микшер-усилитель CVGAUDIO ReBox-T4</h3>
+                  <p class="good-set__desc">text</p>
+                  <div class="good-set__bottom">
+                    <p class="good-set__price">9 999 999 ₽</p>
+                    <p class="good-set__more">
+                      <span>Подробнее</span>
+                      <svg>
+                        <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="good-set__item">
+              <a href="#" class="good-set__link">
+                <img src="assets/img/catalog/card-item-1.png" alt="" class="good-set__img">
+                <div class="good-set__content">
+                  <h3 class="good-set__item-title">Комбинированный микшер-усилитель CVGAUDIO ReBox-T4</h3>
+                  <p class="good-set__desc">Миниатюрный экономичный микшер – усилитель, 40W/100V, MP3 (USB/SD) плеер / FM тюнер / Bluetooth</p>
+                  <div class="good-set__bottom">
+                    <p class="good-set__price">9 999 999 ₽</p>
+                    <p class="good-set__more">
+                      <span>Подробнее</span>
+                      <svg>
+                        <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="good-set__item">
+              <a href="#" class="good-set__link">
+                <img src="assets/img/catalog/card-item-2.png" alt="" class="good-set__img">
+                <div class="good-set__content">
+                  <h3 class="good-set__item-title">Комбинированный микшер-усилитель CVGAUDIO ReBox-T4</h3>
+                  <p class="good-set__desc">text</p>
+                  <div class="good-set__bottom">
+                    <p class="good-set__price">9 999 999 ₽</p>
+                    <p class="good-set__more">
+                      <span>Подробнее</span>
+                      <svg>
+                        <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="good-set__item">
+              <a href="#" class="good-set__link">
+                <img src="assets/img/catalog/card-item-1.png" alt="" class="good-set__img">
+                <div class="good-set__content">
+                  <h3 class="good-set__item-title">Комбинированный микшер-усилитель CVGAUDIO ReBox-T4</h3>
+                  <p class="good-set__desc">Миниатюрный экономичный микшер – усилитель, 40W/100V, MP3 (USB/SD) плеер / FM тюнер / Bluetooth</p>
+                  <div class="good-set__bottom">
+                    <p class="good-set__price">9 999 999 ₽</p>
+                    <p class="good-set__more">
+                      <span>Подробнее</span>
+                      <svg>
+                        <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="good-set__item">
+              <a href="#" class="good-set__link">
+                <img src="assets/img/catalog/card-item-2.png" alt="" class="good-set__img">
+                <div class="good-set__content">
+                  <h3 class="good-set__item-title">Комбинированный микшер-усилитель CVGAUDIO ReBox-T4</h3>
+                  <p class="good-set__desc">text</p>
+                  <div class="good-set__bottom">
+                    <p class="good-set__price">9 999 999 ₽</p>
+                    <p class="good-set__more">
+                      <span>Подробнее</span>
+                      <svg>
+                        <use xlink:href="assets/sprite.svg#arrow-right"></use>
+                      </svg>
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="info">
+        <div class="container">
+          <div class="info__inner">
+            <h2 class="info__title title">Профессиональное звуковое, световое и&nbsp;видеооборудование</h2>
+            <div class="info__text-wrap">
+              <p>Это динамично развивающаяся компания, зарекомендовавшая себя на&nbsp;рынке профессионального звукового и&nbsp;мультимедийного оборудования. Компания обеспечивает поддержкой своих постоянных партнеров, оказывая широкий спектр услуг:</p>
+              <p>консультация, подготовка готовых технических решений, специальные цены под проекты, поставка, обучение персонала партнеров, монтаж звука, видео, аудио систем в&nbsp;помещениях и&nbsp;на&nbsp;улице в&nbsp;Москве, гарантия на&nbsp;все оборудования и&nbsp;сервис.</p>
+              <p>Компания Альфа Звук является дилером крупных дистрибьютеров высококачественного профессионального аудиовизуального оборудования для оснащения объектов различных уровней сложности&nbsp;&mdash; объектов культуры, спорта, развлечений, деловых мероприятий и&nbsp;ответственных проектов в&nbsp;различных отраслях промышленности и&nbsp;регионах.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="container">
+          <div class="footer__main-inner">
+            <div class="footer__section">
+              <a href="/" class="footer__logo-link">
+                <img src="assets/img/logo-white@1x.png" srcset="assets/img/logo-white@2x.png 2x" class="footer__logo-img" alt="alfa-tech лого">
+              </a>
+              <p class="footer__logo-text">Комплексные решения для бизнеса</p>
+
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a href="https://t.me/username" class="social-list__link">
+                    <svg class="social-list__icon">
+                      <use xlink:href="assets/sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://wa.me/89169598565" class="social-list__link">
+                    <svg class="social-list__icon">
+                      <use xlink:href="assets/sprite.svg#whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="footer__contacts">
+                <a href="mailto:info@alfazvuk.ru" target="_blank" class="footer__email">info@alfazvuk.ru</a>
+                <div class="footer__phone">
+                  <a href="tel:88004443435" class="footer__phone-link">8 800 444 34 35</a>
+                  <p class="footer__phone-text">бесплатный звонок по России</p>
+                </div>
+              </div>
+              <a href="#" class="footer__showroom-link">Записаться в шоурум</a>
+            </div>
+            <div class="footer__section">
+              <p class="footer__info-text">Компания <br> ООО &laquo;Альфа Технолоджис&raquo;</p>
+              <p class="footer__info-text">ИНН 7733245646</p>
+              <p class="footer__info-text">127549, Г.&nbsp;Москва, ул. Пришвина, д.8, офис &#8470;&nbsp;120</p>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a href="https://t.me/username" class="social-list__link">
+                    <svg class="social-list__icon">
+                      <use xlink:href="assets/sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a href="https://wa.me/89169598565" class="social-list__link">
+                    <svg class="social-list__icon">
+                      <use xlink:href="assets/sprite.svg#whatsapp"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__section">
+              <h3 class="footer__title">Комплексные решения</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Системы трансляции и речевого оповещения</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Профессиональное звуковое оборудование</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Системы видеонаблюдения</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Конференц-системы и Видеоконференцсвязь</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Все категории</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__section">
+              <h3 class="footer__title">Клиентам</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Комплексные решения</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Услуги</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="container">
+          <div class="footer__bottom-inner">
+            <p class="footer__copyright">&copy;&nbsp;2021 &laquo;АЛЬФА ТЕХНОЛОДЖИС&raquo;</p>
+            <a href="#" target="_blank" class="footer__privacy-policy">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="popup js-popup" id="error-popup">
+      <button class="popup__close-btn js-close-popup" type="button">
+        <svg>
+          <use xlink:href="assets/sprite.svg#close"></use>
+        </svg>
+      </button>
+      <div class="popup__inner">
+        <h3 class="title popup__title _centered">Что-то пошло не так.</h3>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

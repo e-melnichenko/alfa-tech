@@ -1,0 +1,146 @@
+{% extends 'templates/base.twig' %}
+
+{% block page %}
+
+{% include 'templates/breadcrumbs.twig' %}
+
+<section class="category">
+  <div class="container">
+    <div class="category__inner">
+      <div class="category__desc">
+        <div class="category__top">
+          <div class="category__title-wrap">
+            <img src="assets/img/catalog/logo-mini.png" alt="" class="category__logo">
+            <h1 class="category__title title">Behringer</h1>
+          </div>
+          <a href="www.behringer.com" target="_blank" class="category__link link">www.behringer.com</a>
+        </div>
+        <p class="category__desc-text">Всемирно известная компания Behringer начала свою работу в 1989 году в Германии, следуя своему бессменному девизу «Удваиваем возможности, за полцены» (Double the Features at Half the Price). Активная деятельность компании и широкие функции предлагаемого оборудования, при крайне низкой цене, в буквальном смысле положили начало новому рынку домашней звукозаписи, ранее не существовавшему.</p>
+      </div>
+      <ul class="category__list">
+      {% set list = [
+        {
+          title: 'AUDIO-интерфейсы / звукозапись',
+          count: 44,
+          img: 'audio-interface.png'
+        },
+        {
+          title: 'MIDI-клавиатуры / Синтезаторы',
+          count: 44,
+          img: 'synthesiser.png'
+        },
+        {
+          title: 'Аксессуары',
+          count: 5,
+          img: 'accessories.png'
+        },
+        {
+          title: 'Педали эффектов бас-гитарные',
+          count: 44,
+          img: 'effect-pedal-bass.png'
+        },
+        {
+          title: 'Педали эффектов гитарные',
+          count: 44,
+          img: 'effect-pedal-guitar.png'
+        },
+        {
+          title: 'Комбоусилители для бас-гитар',
+          count: 44,
+          img: 'combo-amp-bass.png'
+        },
+        {
+          title: 'Комбоусилители для клавишных',
+          count: 44,
+          img: 'combo-amp-keyboard.png'
+        },
+        {
+          title: 'Электронные барабаны',
+          count: 44,
+          img: 'electronic-drums.png'
+        },
+        {
+          title: 'MIDI-контроллеры',
+          count: 44,
+          img: 'midi-controller.png'
+        },
+        {
+          title: 'АС и студийные мониторы',
+          count: 44,
+          img: 'studio-monitor.png'
+        },
+        {
+          title: 'Блоки питания (адаптеры) и аксессуары',
+          count: 44,
+          img: 'headphones.png'
+        },
+        {
+          title: 'Микрофоны',
+          count: 44,
+          img: 'microphone.png'
+        },
+      ] %}
+      {% for item in list %}
+        <li class="category__item">
+          <a href="#" class="category__item-link">
+            <h3 class="category__item-title">
+              <span>{{ item.title }}</span>
+              <span class="category__item-count">{{ item.count }}</span>
+            </h3>
+            <div class="category__item-bottom">
+              <svg class="category__item-arrow"><use xlink:href="assets/sprite.svg#arrow-right"></use></svg>
+              <img src="assets/img/catalog/{{ item.img }}" alt="" class="category__item-img">
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="good-set">
+  <div class="container">
+    <h2 class="good-set__title title">Популярное</h2>
+    <ul class="good-set__list">
+    {% for item in 0..2 %}
+      <li class="good-set__item">
+        <a href="#" class="good-set__link">
+          <img src="assets/img/catalog/card-item-1.png" alt="" class="good-set__img">
+          <div class="good-set__content">
+            <h3 class="good-set__item-title">Комбинированный микшер-усилитель CVGAUDIO ReBox-T4</h3>
+            <p class="good-set__desc">Миниатюрный экономичный микшер – усилитель, 40W/100V, MP3 (USB/SD) плеер / FM тюнер / Bluetooth</p>
+            <div class="good-set__bottom">
+              <p class="good-set__price">9 999 999 ₽</p>
+              <p class="good-set__more">
+                <span>Подробнее</span>
+                <svg><use xlink:href="assets/sprite.svg#arrow-right"></use></svg>
+              </p>
+            </div>
+          </div>
+        </a>
+      </li>
+      <li class="good-set__item">
+        <a href="#" class="good-set__link">
+          <img src="assets/img/catalog/card-item-2.png" alt="" class="good-set__img">
+          <div class="good-set__content">
+            <h3 class="good-set__item-title">Комбинированный микшер-усилитель CVGAUDIO ReBox-T4</h3>
+            <p class="good-set__desc">text</p>
+            <div class="good-set__bottom">
+              <p class="good-set__price">9 999 999 ₽</p>
+              <p class="good-set__more">
+                <span>Подробнее</span>
+                <svg><use xlink:href="assets/sprite.svg#arrow-right"></use></svg>
+              </p>
+            </div>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% include 'templates/info.twig' %}
+
+{% endblock %}
