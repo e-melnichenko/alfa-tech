@@ -1,0 +1,63 @@
+{% extends 'templates/base.twig' %}
+
+{% block page %}
+
+{% include 'templates/breadcrumbs.twig' %}
+
+<section class="good-card">
+  <div class="container">
+    <div class="good-card__inner">
+      <div class="good-card__preview">
+        <div class="good-card__main-slider splide js-slider" data-name="good-main">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="assets/img/good-main.png" alt="" class="good-card__main-img">
+              </li>
+              <li class="splide__slide">
+                <img src="assets/img/good-main.png" alt="" class="good-card__main-img">
+              </li>
+              <li class="splide__slide">
+                <img src="assets/img/good-main.png" alt="" class="good-card__main-img">
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="good-card__thumbnails js-slider" data-name="good-thumbnails">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="assets/img/good-thumb.png" alt="" class="good-card__thumbnails-img">
+              </li>
+              <li class="splide__slide">
+                <img src="assets/img/good-thumb.png" alt="" class="good-card__thumbnails-img">
+              </li>
+              <li class="splide__slide">
+                <img src="assets/img/good-thumb.png" alt="" class="good-card__thumbnails-img">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="good-card__content">
+        <h1 class="good-card__title">Миниатюрный профессиональный микшер-усилитель с встроенным MP3 CVG AUDIO ReBox-T4</h1>
+        <p class="good-card__producer">
+          <span>Производитель:</span>
+          <span class="good-card__producer-value">CVG Audio</span>
+        </p>
+        <p class="good-card__desc">Миниатюрный экономичный микшер – усилитель для настольной или настенной установки, 40W/100V, встроенный модуль источника сигнала - MP3 (USB/SD) плеер / FM тюнер / Bluetooth. Два линейных входа Aux In – 2 x 2RCA, один универсальный микрофонный вход – XLR/TSR 6,35mm (Mic In), линейный выход Link out – 2RCA. Микрофонный вход имеет приоритет над линейными входом и встроенным модулем источника сигнала. Регуляторы уровня высоких и низких частот, регулировка уровня линейного и микрофонного входов, уровень сигнала с встроенного плеера и Master регулировка громкости находятся на лицевой панели. В комплект поставки входит IR пульт управления MP3/FM/Bluetooth модулем, кронштейн для настенной установки, антенна для FM тюнера.</p>
+        <div class="good-card__bottom">
+          <div class="good-card__price">
+            <p class="good-card__price-title">Цена</p>
+            <p class="good-card__price-value">9 999 999 руб.</p>
+          </div>
+          <a href="#" class="good-card__order-btn btn _red">Заказать</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# {% include 'templates/info.twig' %} #}
+
+{% endblock %}

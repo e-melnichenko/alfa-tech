@@ -1,0 +1,11 @@
+.good-card {
+  &__inner {}
+
+  &__main-slider {
+    .splide {
+      &__track {
+        margin: 0 -2rem;
+      }
+    }
+  }
+}

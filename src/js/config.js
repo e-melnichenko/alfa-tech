@@ -35,8 +35,27 @@ export const SLIDERS = {
 
         console.log(slider);
       }
-    }
-  }
+    },
+  },
+  'good-main': {
+    options: {
+      perPage: 1,
+      pagination: false,
+      perMove: 1,
+    },
+    callbacks: {},
+    asNavFor: 'good-thumbnails',
+  },
+  'good-thumbnails': {
+    options: {
+      perPage: 3,
+      pagination: false,
+      perMove: 1,
+      isNavigation: true,
+    },
+    callbacks: {},
+    asNavFor: 'good-main',
+  },
 }
 
 export const PLACEMARKS = [
