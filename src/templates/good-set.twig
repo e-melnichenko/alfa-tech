@@ -1,0 +1,16 @@
+<section class="good-set">
+  <div class="container">
+    <h2 class="good-set__title title">{{ title }}</h2>
+    <div class="splide js-slider" data-name="good-set">
+      <div class="splide__track">
+        <ul class="splide__list">
+        {% for i in 1..5 %}
+          <li class="splide__slide">
+            {% include 'good-card.twig' %}
+          </li>
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

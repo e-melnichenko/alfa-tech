@@ -1,0 +1,22 @@
+.doc-list {
+  &__item {
+    margin-bottom: 2.4rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+    width: 4rem;
+    height: 6rem;
+    margin-right: 2rem;
+  }
+}

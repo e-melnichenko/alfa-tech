@@ -19,6 +19,7 @@
     border: none;
     background-color: $color-main;
     color: #fff;
+    overflow: hidden;
     &::after {
       content: '';
       position: absolute;

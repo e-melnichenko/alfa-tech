@@ -4,60 +4,269 @@
 
 {% include 'templates/breadcrumbs.twig' %}
 
-<section class="good-card">
+<section class="good-info">
   <div class="container">
-    <div class="good-card__inner">
-      <div class="good-card__preview">
-        <div class="good-card__main-slider splide js-slider" data-name="good-main">
+
+    <div class="good-info__inner">
+      <div class="good-cart__top">
+        <h1 class="good-info__title title">Миниатюрный профессиональный микшер-усилитель с встроенным MP3 CVG AUDIO ReBox-T4</h1>
+        <p class="good-info__producer">
+          <span>Производитель:</span>
+          <span class="good-info__producer-value">CVG Audio</span>
+        </p>
+      </div>
+
+      <div class="good-info__preview">
+        <div class="good-info__main-slider splide js-slider" data-name="good-main">
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="assets/img/good-main.png" alt="" class="good-card__main-img">
+                <img src="assets/img/good-main.png" alt="" class="good-info__main-img">
               </li>
               <li class="splide__slide">
-                <img src="assets/img/good-main.png" alt="" class="good-card__main-img">
+                <img src="assets/img/good-main.png" alt="" class="good-info__main-img">
               </li>
               <li class="splide__slide">
-                <img src="assets/img/good-main.png" alt="" class="good-card__main-img">
+                <img src="assets/img/good-main.png" alt="" class="good-info__main-img">
+              </li>
+              <li class="splide__slide">
+                <img src="assets/img/good-main.png" alt="" class="good-info__main-img">
               </li>
             </ul>
           </div>
         </div>
-        <div class="good-card__thumbnails js-slider" data-name="good-thumbnails">
+        <div class="good-info__thumbnails js-slider" data-name="good-thumbnails">
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
-                <img src="assets/img/good-thumb.png" alt="" class="good-card__thumbnails-img">
+                <img src="assets/img/good-thumb.png" alt="" class="good-info__thumbnails-img">
               </li>
               <li class="splide__slide">
-                <img src="assets/img/good-thumb.png" alt="" class="good-card__thumbnails-img">
+                <img src="assets/img/good-thumb.png" alt="" class="good-info__thumbnails-img">
               </li>
               <li class="splide__slide">
-                <img src="assets/img/good-thumb.png" alt="" class="good-card__thumbnails-img">
+                <img src="assets/img/good-thumb.png" alt="" class="good-info__thumbnails-img">
+              </li>
+              <li class="splide__slide">
+                <img src="assets/img/good-thumb.png" alt="" class="good-info__thumbnails-img">
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="good-card__content">
-        <h1 class="good-card__title">Миниатюрный профессиональный микшер-усилитель с встроенным MP3 CVG AUDIO ReBox-T4</h1>
-        <p class="good-card__producer">
-          <span>Производитель:</span>
-          <span class="good-card__producer-value">CVG Audio</span>
-        </p>
-        <p class="good-card__desc">Миниатюрный экономичный микшер – усилитель для настольной или настенной установки, 40W/100V, встроенный модуль источника сигнала - MP3 (USB/SD) плеер / FM тюнер / Bluetooth. Два линейных входа Aux In – 2 x 2RCA, один универсальный микрофонный вход – XLR/TSR 6,35mm (Mic In), линейный выход Link out – 2RCA. Микрофонный вход имеет приоритет над линейными входом и встроенным модулем источника сигнала. Регуляторы уровня высоких и низких частот, регулировка уровня линейного и микрофонного входов, уровень сигнала с встроенного плеера и Master регулировка громкости находятся на лицевой панели. В комплект поставки входит IR пульт управления MP3/FM/Bluetooth модулем, кронштейн для настенной установки, антенна для FM тюнера.</p>
-        <div class="good-card__bottom">
-          <div class="good-card__price">
-            <p class="good-card__price-title">Цена</p>
-            <p class="good-card__price-value">9 999 999 руб.</p>
+
+      <div class="good-info__content">
+        <p class="good-info__desc">Миниатюрный экономичный микшер – усилитель для настольной или настенной установки, 40W/100V, встроенный модуль источника сигнала - MP3 (USB/SD) плеер / FM тюнер / Bluetooth. Два линейных входа Aux In – 2 x 2RCA, один универсальный микрофонный вход – XLR/TSR 6,35mm (Mic In), линейный выход Link out – 2RCA. Микрофонный вход имеет приоритет над линейными входом и встроенным модулем источника сигнала. Регуляторы уровня высоких и низких частот, регулировка уровня линейного и микрофонного входов, уровень сигнала с встроенного плеера и Master регулировка громкости находятся на лицевой панели. В комплект поставки входит IR пульт управления MP3/FM/Bluetooth модулем, кронштейн для настенной установки, антенна для FM тюнера.</p>
+        <div class="good-info__bottom">
+          <div class="good-info__price">
+            <p class="good-info__price-title">Цена</p>
+            <p class="good-info__price-value">9 999 999 руб.</p>
           </div>
-          <a href="#" class="good-card__order-btn btn _red">Заказать</a>
+          <a href="#" class="good-info__order-btn btn _red">Заказать</a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-{# {% include 'templates/info.twig' %} #}
+<section class="stats">
+  <div class="container">
+    <div class="tabs js-tabs">
+      <div class="tabs__nav js-scroll-container">
+        <ul class="tabs__nav-list">
+          <li class="tabs__nav-item js-tab-nav _active" data-index="0" data-content="Характеристики">Характеристики</li>
+          <li class="tabs__nav-item js-tab-nav" data-index="1" data-content="Полное описание">Полное описание</li>
+          <li class="tabs__nav-item js-tab-nav" data-index="2" data-content="Документация">Документация</li>
+        </ul>
+      </div>
+      <div class="tabs__content">
+        <div class="tabs__item js-tab-content _active" data-index="0">
+          <div class="stats__table">
+
+            {% set tableData = [
+              { left: 'МОЩНОСТЬ', right: '40W - 100V'},
+              { left: 'ЧАСТОТНЫЙ ДИАПАЗОН', right: '80 – 18000Hz – 3dB(100V)'},
+              { left: 'ИСКАЖЕНИЯ (THD)', right: '0,1% на 1kHz на 1/3 rated power output'},
+              { left: 'S/N RATIO', right: 'Line – 70dB / Mic - 66dB'},
+              { left: 'AUX IN', right: '2 x 2RCA (unbalanced), 250mV'},
+              { left: 'Mic In', right: '1 x XLR/TR 6.3mm (undalanced), mic 1 – priority'},
+              { left: 'РЕГУЛИРОВКА ТЕМБРА', right: 'Bass: 10dB - 100Hz Trable: 10dB - 10000Hz'},
+              { left: 'ГАБАРИТНЫЙ РАЗМЕР', right: '250mm х 65mm х 200mm'},
+              { left: 'ЭЛЕКТРОПИТАНИЕ', right: '220V / 50-60Hz'},
+              { left: 'ЭЛЕКТРОПОТРЕБЛЕНИЕ', right: '80W'},
+              { left: 'ЗАЩИТА', right: 'Перегрузка, перегрев, короткое замыкание, предохранитель по питанию'},
+              { left: 'АС ПРЕДОХРАНИТЕЛЬ', right: '2A (внутренняя установка)'},
+              { left: 'ВЕС', right: '5 kg'},
+            ]%}
+
+            {% for row in tableData %}
+            <div class="stats__table-row">
+              <div class="stats__table-cell">{{ row.left }}</div>
+              <div class="stats__table-cell _bold">{{ row.right }}</div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="tabs__item js-tab-content" data-index="1">
+          <div class="full-desc">
+            <div class="full-desc__media">
+              <div class="full-desc__video-wrap">
+                <!-- url должен содержать ?enablejsapi=1 -->
+                <iframe src="https://www.youtube.com/embed/mWSFAgbsVDk?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen allowscriptaccess="always"></iframe>
+              </div>
+            </div>
+            <div class="full-desc__text">
+              <p>
+                Однокомпонентный герметик черного цвета на основе MS-полимеров для промышленного и строительного применения. Особенно рекомендуется к применению как всепогодный герметик для структурного остекления. Герметик может применяться внутри и снаружи помещений. Легко наносится вручную с помощью специальных пистолетов. Отверждается в результате химической реакции с влагой воздуха. Герметик обладает отличной адгезией к большинству материалов, хорошими прочностными и деформационными свойствами после
+                отверждения.
+              </p>
+              <p>
+                Однокомпонентный герметик черного цвета на основе MS-полимеров для промышленного и строительного применения. Особенно рекомендуется к применению как всепогодный герметик для структурного остекления. Герметик может применяться внутри и снаружи помещений. Легко наносится вручную с помощью специальных пистолетов. Отверждается в результате химической реакции с влагой воздуха. Герметик обладает отличной адгезией к большинству материалов, хорошими прочностными и деформационными свойствами после
+                отверждения.
+              </p>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          с картинкой
+          <br>
+          <br>
+
+
+          <div class="full-desc">
+            <div class="full-desc__media">
+              <img class="full-desc__img" src="assets/img/good-main.png" alt="">
+            </div>
+
+            <div class="full-desc__text">
+              <p>
+                Однокомпонентный герметик черного цвета на основе MS-полимеров для промышленного и строительного применения. Особенно рекомендуется к применению как всепогодный герметик для структурного остекления. Герметик может применяться внутри и снаружи помещений. Легко наносится вручную с помощью специальных пистолетов. Отверждается в результате химической реакции с влагой воздуха. Герметик обладает отличной адгезией к большинству материалов, хорошими прочностными и деформационными свойствами после
+                отверждения.
+              </p>
+              <p>
+                Однокомпонентный герметик черного цвета на основе MS-полимеров для промышленного и строительного применения. Особенно рекомендуется к применению как всепогодный герметик для структурного остекления. Герметик может применяться внутри и снаружи помещений. Легко наносится вручную с помощью специальных пистолетов. Отверждается в результате химической реакции с влагой воздуха. Герметик обладает отличной адгезией к большинству материалов, хорошими прочностными и деформационными свойствами после
+                отверждения.
+              </p>
+            </div>
+          </div>
+
+
+          <br>
+          <br>
+          без медиа
+          <br>
+          <br>
+
+
+          <div class="full-desc">
+            <div class="full-desc__text">
+              <p>
+                Однокомпонентный герметик черного цвета на основе MS-полимеров для промышленного и строительного применения. Особенно рекомендуется к применению как всепогодный герметик для структурного остекления. Герметик может применяться внутри и снаружи помещений. Легко наносится вручную с помощью специальных пистолетов. Отверждается в результате химической реакции с влагой воздуха. Герметик обладает отличной адгезией к большинству материалов, хорошими прочностными и деформационными свойствами после
+                отверждения.
+              </p>
+               <img src="https://via.placeholder.com/500x300" alt="">
+              <p>
+                Однокомпонентный герметик черного цвета на основе MS-полимеров для промышленного и строительного применения. Особенно рекомендуется к применению как всепогодный герметик для структурного остекления. Герметик может применяться внутри и снаружи помещений. Легко наносится вручную с помощью специальных пистолетов. Отверждается в результате химической реакции с влагой воздуха. Герметик обладает отличной адгезией к большинству материалов, хорошими прочностными и деформационными свойствами после
+                отверждения.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tabs__item js-tab-content" data-index="2">
+          <ul class="doc-list">
+            <li class="doc-list__item">
+              <a href="/doc.pdf" target="_blank" class="doc-list__link">
+                <svg class="doc-list__icon"><use xlink:href="assets/sprite.svg#pdf"></use></svg>
+                <span>Герметик акриловый VGT для монтажных швов. Технический лист</span>
+              </a>
+            </li>
+            <li class="doc-list__item">
+              <a href="/doc.pdf" target="_blank" class="doc-list__link">
+                <svg class="doc-list__icon"><use xlink:href="assets/sprite.svg#pdf"></use></svg>
+                <span>Герметик акриловый VGT для монтажных швов. Технический лист</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="good-adv">
+  <div class="container">
+
+  {% set list = [
+    {
+      title: 'Самовывоз',
+      icon: 'parcel',
+      desc: ['Из&nbsp;офиса по&nbsp;адресу: г. Москва, ул. Пришвина, д.8, офис &#8470;&nbsp;120, График работы с&nbsp;10:00 до&nbsp;18:00.'],
+      link: 'Все пункты  самовывоза',
+    },
+    {
+      title: 'Оплата',
+      icon: 'payment',
+      desc: ['Мы&nbsp;работаем с&nbsp;Юридическими и&nbsp;Физическими лицами. Различные варианты оплаты и&nbsp;условия.'],
+      link: 'Подробнее о&nbsp;доставке и&nbsp;оплате'
+    },
+    {
+      title: 'Монтаж',
+      icon: 'install',
+      desc: ['Вы&nbsp;всегда можете рассчитывать на&nbsp;поддержку наших специалистов по&nbsp;монтажу. Мы&nbsp;в&nbsp;кратчайшие сроки и&nbsp;с&nbsp;неизменным качеством соберем, установим и&nbsp;подключим все необходимое оборудование.'],
+    },
+    {
+      title: 'Техподдержка',
+      icon: 'support',
+      desc: ['Вы&nbsp;можете воспользоваться любыми контактами, указанными на&nbsp;сайте. Вам не&nbsp;откажут в&nbsp;помощи, проконсультируют, предоставят схемы подключения, мануалы. Вашей проблемой будут заниматься вплоть до&nbsp;её&nbsp;решения.'],
+    },
+    {
+      title: 'Доставка',
+      icon: 'delivery',
+      desc: [
+        'Доставка по&nbsp;Москве и&nbsp;Московской области, Санкт-Петербургу, России.',
+        'Доставка по&nbsp;Москве осуществляется собственной курьерской службой.',
+        'Доставка по&nbsp;Санкт-Петербургу осуществляется до&nbsp;дверей! Либо до&nbsp;пункта выдачи.',
+        'Доставка по&nbsp;России осуществляется транспортными компаниями:',
+        'Деловые Линии, ПЭК, ЖелДорЭкспедиция, КИТ (Кашалот), СДЭК, Байкал Сервис.',
+        'Срок и&nbsp;способ доставки по&nbsp;России оговаривается в&nbsp;каждом конкретном случае с&nbsp;Вашим личным менеджером, который ведёт Ваш заказ.',
+      ],
+      link: 'Подробнее о доставке и оплате'
+    },
+  ] %}
+
+  <ul class="good-adv__list">
+    {% for item in list %}
+      <li class="good-adv__item">
+        {{ item.link ? '<a href="#" class="good-adv__item-link">' : '<span class="good-adv__item-link">' }}
+          <div class="good-adv__item-top">
+            <svg class="good-adv__item-icon"><use xlink:href="assets/sprite.svg#{{ item.icon }}"></use></svg>
+            <h3 class="good-adv__item-title">{{ item.title }}</h3>
+          </div>
+        {% for desc in item.desc %}
+          <p class="good-adv__item-desc">{{ desc }}</p>
+        {% endfor %}
+
+        {% if (item.link) %}
+          <div class="good-adv__item-bottom">
+            <span>{{ item.link }}</span>
+            <svg><use xlink:href="assets/sprite.svg#arrow-right"></use></svg>
+          </div>
+        {% endif %}
+
+        {{ item.link ? '</a>' : '</span>' }}
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>
+
+{% include 'templates/good-set.twig' with {title: 'С этим товаром часто покупают'} %}
+{% include 'templates/good-set.twig' with {title: 'Похожие товары'} %}
+
+{% include 'templates/info.twig' %}
 
 {% endblock %}

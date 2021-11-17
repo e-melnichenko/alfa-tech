@@ -1,0 +1,151 @@
+.good-info {
+  margin-bottom: 2rem;
+  @include breakpoint($desktop-width) {
+    margin-bottom: 8rem;
+  }
+
+  &__inner {
+    @include breakpoint($desktop-width) {
+      display: grid;
+      grid-template-areas:
+        "preview title"
+        "preview desc"
+      ;
+      grid-template-rows: auto 1fr;
+      grid-column-gap: 5.6rem;
+      grid-row-gap: 2rem;
+    }
+  }
+
+  &__top {
+    margin-bottom: 2rem;
+    @include breakpoint($desktop-width) {
+      grid-area: title;
+      margin: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+  }
+
+  &__producer {
+    margin: 0;
+    padding: 2rem 0;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #343A3F;
+    border-top: 1px solid rgba(#0F1011, .1);
+    border-bottom: 1px solid rgba(#0F1011, .1);
+  }
+
+  &__producer-value {
+    color: $color-main;
+    margin-left: .8rem;
+    font-weight: 500;
+  }
+
+  &__preview {
+    margin-bottom: 4rem;
+    @include breakpoint($desktop-width) {
+      grid-area: preview;
+      margin: 0;
+    }
+  }
+
+  &__main-slider {
+    margin-bottom: 2.5rem;
+
+    .splide {
+      &__track {
+        margin: 0 -2rem;
+      }
+
+      &__arrow {
+        background-color: #fff;
+        &--prev {
+          left: 1rem;
+        }
+        &--next {
+          right: 1rem;
+        }
+      }
+    }
+  }
+
+  &__main-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__thumbnails {
+    .splide {
+      &__slide {
+        &.is-active {
+          border-color: $color-main!important;
+        }
+      }
+    }
+  }
+
+  &__content {
+    @include breakpoint($desktop-width) {
+      grid-area: desc;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #4F4F4F;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @include breakpoint($desktop-width) {
+      justify-content: flex-start;
+      margin-top: auto;
+    }
+  }
+
+  &__price-title {
+    margin: 0;
+    margin-bottom: 1rem;
+    color: #828282;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    @include breakpoint($desktop-width) {
+      font-size: 1.6rem;
+      line-height: 1.5;
+    }
+  }
+
+  &__price-value {
+    margin: 0;
+    font-family: $roboto;
+    font-size: 2rem;
+    line-height: 1;
+    @include breakpoint($desktop-width) {
+      font-family: $gotham;
+      font-weight: 500;
+      font-size: 3.2rem;
+      line-height: 1.2;
+    }
+  }
+
+  &__order-btn {
+    width: 15.8rem;
+    @include breakpoint($desktop-width) {
+      width: 23rem;
+      margin: 0 auto;
+    }
+  }
+
+
+}

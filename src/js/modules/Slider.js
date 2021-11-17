@@ -12,18 +12,18 @@ export default class Slider {
       const name = slider.dataset.name;
       if(this.activatedAsNav.includes(name)) return
 
-      const splide = new Splide(slider, SLIDERS[name].options);
-      this._addCallbacks(splide, SLIDERS[name].callbacks);
+      const splide = new Splide(slider, SLIDERS[name]?.options);
+      this._addCallbacks(splide, SLIDERS[name]?.callbacks);
 
-      if(SLIDERS[name].asNavFor) {
+      if(SLIDERS[name]?.asNavFor) {
         const secondConfig = SLIDERS[SLIDERS[name].asNavFor].options;
         const secondSliderElem = document.querySelector(`.js-slider[data-name="${SLIDERS[name].asNavFor}"]`);
         const secondSlider = new Splide(secondSliderElem, secondConfig);
         splide.sync(secondSlider);
         splide.mount();
         secondSlider.mount();
-        window.primaty = splide;
-        window.secondary = secondSlider;
+        // window.primaty = splide;
+        // window.secondary = secondSlider;
         this.activatedAsNav.push(SLIDERS[name].asNavFor)
 
         if(secondSlider.options.perPage >= secondSlider.length) {
@@ -51,7 +51,7 @@ export default class Slider {
     })
   }
 
-  _addCallbacks(slider, callbacks) {
+  _addCallbacks(slider, callbacks={}) {
     Object.entries(callbacks).forEach(([cbName, cbFn]) => {
       slider.on(cbName, () => cbFn(slider));
     })

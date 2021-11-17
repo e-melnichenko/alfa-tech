@@ -42,6 +42,8 @@ export const SLIDERS = {
       perPage: 1,
       pagination: false,
       perMove: 1,
+      gap: '2rem',
+      padding: '2rem'
     },
     callbacks: {},
     asNavFor: 'good-thumbnails',
@@ -49,13 +51,37 @@ export const SLIDERS = {
   'good-thumbnails': {
     options: {
       perPage: 3,
+      arrows: false,
       pagination: false,
       perMove: 1,
       isNavigation: true,
+      focus: 'center',
     },
     callbacks: {},
     asNavFor: 'good-main',
   },
+  'good-set': {
+    options: {
+      gap: 20,
+      perMove: 1,
+      mediaQuery: 'min',
+      pagination: false,
+      fixedWidth: '30rem',
+      arrows: false,
+      padding: 20,
+      breakpoints: {
+        [BREAKPOINTS.tablet]: {
+          padding: 24,
+        },
+        [BREAKPOINTS.desktop]: {
+          fixedWidth: false,
+          perPage: 3,
+          arrows: true,
+          padding: false
+        }
+      }
+    }
+  }
 }
 
 export const PLACEMARKS = [
